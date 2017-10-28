@@ -1,5 +1,6 @@
+execute pathogen#infect()
 " Plugins settings
-filetype on
+filetype plugin indent on
 
 " General settings
 set encoding=utf-8 " Force UTF-8 encoding
@@ -25,7 +26,7 @@ set ignorecase " Search case insensitive...
 set smartcase " ... but not when search pattern contains upper case characters
 
 syntax on " Enable syntax highlighting
-colorscheme desert " Set default colorscheme
+colorscheme solarized " Set default colorscheme
 
 set nocompatible                " Use Vim defaults instead of 100% vi compatibility
 set backspace=indent,eol,start  " more powerful backspacing
@@ -42,4 +43,7 @@ if has('gui_running')
   " Make shift-insert work like in Xterm
   map <S-Insert> <MiddleMouse>
   map! <S-Insert> <MiddleMouse>
+  set background=light
+else
+  set background=dark
 endif
