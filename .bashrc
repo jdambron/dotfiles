@@ -2,6 +2,8 @@
 # ~/.bashrc
 #
 
+exec fish
+
 [[ $- != *i* ]] && return
 
 colors() {
