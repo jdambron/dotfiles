@@ -2,8 +2,6 @@
 # ~/.bashrc
 #
 
-exec fish
-
 [[ $- != *i* ]] && return
 
 colors() {
@@ -62,6 +60,7 @@ match_lhs=""
 [[ $'\n'${match_lhs} == *$'\n'"TERM "${safe_term}* ]] && use_color=true
 
 if ${use_color} ; then
+	source ~/gitprompt/gitprompt.sh
 	# Enable colors for ls, etc.  Prefer ~/.dir_colors #64489
 	if type -P dircolors >/dev/null ; then
 		if [[ -f ~/.dir_colors ]] ; then
@@ -69,12 +68,6 @@ if ${use_color} ; then
 		elif [[ -f /etc/DIR_COLORS ]] ; then
 			eval $(dircolors -b /etc/DIR_COLORS)
 		fi
-	fi
-
-	if [[ ${EUID} == 0 ]] ; then
-		PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
-	else
-		PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
 	fi
 
 	alias ls='ls --color=auto'
