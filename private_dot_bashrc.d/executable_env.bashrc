@@ -1,0 +1,4 @@
+#!/bin/bash
+
+EXPORT VISUAL=vim
+EXPORT EDITOR="$VISUAL"
