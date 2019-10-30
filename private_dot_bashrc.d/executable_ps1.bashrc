@@ -39,8 +39,6 @@ GIT_UNMERGED_COLOR=$MAGENTA
 
 function Init
 {
-    EchoGreeting
-    
     if [ ! -e $RC_FILE ]; then
 	MkConfigFile
 	echo "It seems like this is your first time using GitPrompt."
@@ -51,12 +49,6 @@ function Init
     fi
 
     SetEditor
-}
-
-function EchoGreeting
-{
-    echo "[GitPrompt version $GITPROMPT_VERSION by Christer Enfors enabled." \
-	 "Type 'GPHelp' for help.]"
 }
 
 function SetEditor
