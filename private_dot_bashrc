@@ -3,5 +3,5 @@ for script in ~/.bashrc.d/*; do
   [ -x "$script" ] || continue
 
   # execute $script in the context of the current shell
-  . $script
+  source "$script"
 done
