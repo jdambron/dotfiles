@@ -171,7 +171,9 @@ bar {
 
 exec --no-startup-id "pulsaudio --start"
 exec --no-startup-id "devmon --no-gui"
+{{- if eq .chezmoi.hostname "msi" }}
 exec --no-startup-id "~/map_keyboard.sh"
+{{- end }}
 exec --no-startup-id "syncthing -no-browser"
 
 set $Locker i3lock && sleep 1
