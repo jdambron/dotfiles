@@ -1,0 +1,17 @@
+#!/bin/bash
+
+restic -r {{ .resticrepo }} backup ~ \
+	--exclude target \
+	--exclude node_modules \
+	--exclude ~/.mozilla \
+	--exclude ~/.cache \
+	--exclude ~/.local/share \
+	--exclude ~/.npm \
+	--exclude ~/.esd_auth \
+	--exclude ~/.dmenu_cache \
+	--exclude ~/.xsession-errors \
+	--exclude ~/.bash_history \
+	--exclude ~/.gnome \
+	--exclude ~/.hplip \
+	--exclude ~/.node-gyp \
+	--exclude ~/.config
