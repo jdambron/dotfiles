@@ -11,9 +11,18 @@
 
 set $mod Mod4
 
+{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
+
+#get auth work with polkit-gnome
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+{{- end }}
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
+{{- if eq .chezmoi.hostname "msi" }}
 font pango:monospace 16
+{{- else }}
+font pango:Droid Sans Regular 8
+{{- end }}
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
