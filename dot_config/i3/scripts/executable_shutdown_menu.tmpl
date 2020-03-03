@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}#!/usr/bin/env bash
 #
 # Use rofi/zenity to change system runstate thanks to systemd.
 #
@@ -184,3 +184,5 @@ if [[ $? -eq 0 && ! -z ${selection} ]]; then
     i3-msg -q "exec ${menu[${selection}]}"
   fi
 fi
+
+{{- end }}

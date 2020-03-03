@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
-# Copyright (C) 2014 Julien Bonjean <{{ .chezmoi.group }}@bonjean.info>
+{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}#!/usr/bin/env bash
+# Copyright (C) 2014 Julien Bonjean <julien@bonjean.info>
 # Copyright (C) 2014 Alexander Keller <github@nycroth.com>
 
 # This program is free software: you can redistribute it and/or modify
@@ -81,3 +81,5 @@ case $BLOCK_BUTTON in
 esac
 
 volume | format
+
+{{- end }}
