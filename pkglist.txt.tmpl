@@ -48,6 +48,10 @@ exa
 expect
 {{- end }}
 feh
+{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
+ffmpegthumbnailer
+file-roller
+{{- end }}
 firefox
 flex
 {{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
@@ -60,6 +64,7 @@ gparted
 grsync
 grub2-theme-endeavouros
 gspell
+gst-plugins-ugly
 gtop
 {{- end }}
 gvim
@@ -74,7 +79,10 @@ intel-ucode
 ipw2100-fw
 ipw2200-fw
 jq
+libgsf
+libopenraw
 libpwquality
+libwnck3
 lightdm-gtk-greeter-settings
 logrotate
 lsscsi
@@ -86,7 +94,6 @@ man-pages
 mc
 memtest86+
 menumaker
-mousepad
 nano
 nbd
 ndisc6
@@ -101,16 +108,16 @@ ntp
 nvidia-installer-dkms
 openconnect
 opendesktop-fonts
-orage
 otf-font-awesome
 paprefs
-parole
+pavucontrol
 pcurses
 picom
 {{- end }}
 pkgconf
 {{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 pkgfile
+poppler-glib
 pptpclient
 pulseaudio-bluetooth
 pulseaudio-jack
@@ -118,7 +125,6 @@ refind-efi
 {{- end }}
 restic
 {{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
-ristretto
 rofi
 rp-pppoe
 {{- end }}
@@ -139,6 +145,7 @@ ttf-caladea
 ttf-carlito
 ttf-opensans
 ttf-ubuntu-font-family
+upower
 {{- end }}
 veracrypt
 vi
@@ -153,27 +160,11 @@ xf86-video-ati
 xf86-video-fbdev
 xf86-video-intel
 xf86-video-vesa
-xfce4-appfinder
-xfce4-battery-plugin
-xfce4-datetime-plugin
-xfce4-mount-plugin
-xfce4-netload-plugin
-xfce4-power-manager
-xfce4-pulseaudio-plugin
-xfce4-screenshooter
-xfce4-session
-xfce4-settings
-xfce4-taskmanager
-xfce4-wavelan-plugin
-xfce4-weather-plugin
-xfce4-whiskermenu-plugin
-xfce4-xkb-plugin
-xfdesktop
-xfwm4-themes
 xl2tpd
 {{- end }}
 xorg-server
 {{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
+xorg-xinit
 xorg-xinput
 xorg-xkill
 {{- end }}
