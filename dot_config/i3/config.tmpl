@@ -300,7 +300,7 @@ bindsym $mod+m exec "/usr/local/bin/switch-audio-port"
 
 {{- if eq .chezmoi.hostname "msi" }}
 set $Locker i3lock && sleep 1
-{{- else }}
+{{- end }}
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
@@ -318,6 +318,7 @@ mode "$mode_system" {
 
 bindsym $mod+Pause mode "$mode_system"
 
+{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 # rofi bindings simple menu
 #bindsym F9 exec rofi -modi drun -show drun -lines 7
 #bindsym F10 exec rofi -show run   -lines 7
