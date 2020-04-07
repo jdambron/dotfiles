@@ -1,5 +1,10 @@
 {{- $email := promptString "email" -}}
+{{- $keepassxc := promptString "keepassxc" -}}
 [data]
   email = "{{ $email }}"
   name = "Julien Dambron"
   resticrepo = "/meadia/Maxtor/restic-repo"
+{{- if eq .chezmoi.hostname "msi" }}
+[keepassxc]
+  database = "{{ $keepassxc }}"
+{{- end }}
