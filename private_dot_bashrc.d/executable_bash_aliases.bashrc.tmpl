@@ -14,5 +14,5 @@ alias ls='exa'
 alias ll='exa -l'
 alias la='exa -la'
 {{- if eq .chezmoi.hostname "msi" }}
-alias sub='~/.local/bin/subliminal download -l en -s --opensubtitles {{ (keepassxc "OpenSubtitles.org").UserName }} {{ (keepassxc "OpenSubtitles.org").Password }}'
+alias sub='~/.local/bin/subliminal --opensubtitles {{ (keepassxc "OpenSubtitles.org").UserName }} {{ (keepassxc "OpenSubtitles.org").Password }} download -l en -s'
 {{- end }}
