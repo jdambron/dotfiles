@@ -120,7 +120,7 @@ exec --no-startup-id "~/map_keyboard.sh"
 exec --no-startup-id picom -cC
 exec --no-startup-id nm-applet
 exec --no-startup-id nitrogen --restore
-#save packages lists:
+#backup packages lists:
 exec pacman -Qqen > packages-repository.txt && pacman -Qqem > packages-AUR.txt
 #set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
@@ -299,7 +299,7 @@ bindsym $mod+F8 exec mocp --next
 # App shortcuts
 bindsym $mod+b exec "/usr/bin/firefox"
 bindsym $mod+n exec "/usr/bin/pcmanfm"
-bindsym Print exec "xfce4-screenshooter"
+bindsym Print exec "scrot ~/%Y-%m-%d-%T-screenshot.png"
 
 {{- end }}
 
