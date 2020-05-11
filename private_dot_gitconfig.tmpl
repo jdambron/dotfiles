@@ -1,8 +1,16 @@
 [user]
 	email = "{{ .email }}"
 	name = "{{ .name }}"
+[diff]
+	tool = vimdiff
+	compactionHeuristic = true
 [merge]
 	tool = vimdiff
 	conflictstyle = diff3
 [mergetool]
 	prompt = false
+[color]
+	ui = true
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = vim
