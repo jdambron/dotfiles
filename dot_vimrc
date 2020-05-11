@@ -9,6 +9,7 @@ call plug#begin()
 Plug 'altercation/vim-colors-solarized'
 Plug 'elixir-lang/vim-elixir'
 Plug 'freitass/todo.txt-vim'
+Plug 'luochen1990/rainbow'
 
 call plug#end()
 
