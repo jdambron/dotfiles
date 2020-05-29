@@ -40,13 +40,8 @@ command=~/.config/i3/scripts/bandwidth2
 color=#e07221
 interval=persist
 
-[wifi]
-label=
-instance=wlan0
-color=#e07221
-interval=3
-
 [ssid]
+label=SSID:
 command=echo "$(iwconfig wlan0 | grep ESSID | awk '{print $4}' | tr -d 'ESSID:"')"
 color=#e07221
 interval=5
@@ -74,7 +69,7 @@ interval=30
 
 [CPU-temperature]
 label=CPU
-command=~/.config/i3/scripts/temperature/
+command=~/.config/i3/scripts/temperature
 color=#96c6f8
 interval=10
 
@@ -87,6 +82,7 @@ color=#96c6f8
 
 # Volume indicator
 [volume-pulseaudio]
+label=Vol:
 command=~/.config/i3/scripts/volume
 color=#208273
 instance=Master
