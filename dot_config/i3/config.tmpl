@@ -118,7 +118,6 @@ exec --no-startup-id "devmon --no-gui"
 exec --no-startup-id "~/map_keyboard.sh"
 {{- else }}
 exec --no-startup-id picom -cC
-exec --no-startup-id nm-applet
 exec --no-startup-id nitrogen --restore
 #backup packages lists:
 exec pacman -Qqen > packages-repository.txt && pacman -Qqem > packages-AUR.txt
@@ -131,6 +130,7 @@ exec --no-startup-id /usr/bin/dunst
 #exec --no-startup-id sleep 15 && eos-welcome
 {{- end }}
 exec --no-startup-id "syncthing -no-browser"
+exec --no-startup-id nm-applet
 
 {{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 # set floating for apps needing it
