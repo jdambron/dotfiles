@@ -1,4 +1,4 @@
-{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}#!/usr/bin/env bash
+#!/usr/bin/env bash
 #
 # Use rofi/zenity to change system runstate thanks to systemd.
 #
@@ -185,4 +185,3 @@ if [[ $? -eq 0 && ! -z ${selection} ]]; then
   fi
 fi
 
-{{- end }}
