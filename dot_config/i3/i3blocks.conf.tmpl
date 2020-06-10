@@ -40,11 +40,13 @@ command=~/.config/i3/scripts/bandwidth2
 color=#e07221
 interval=persist
 
+{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 [ssid]
 label=SSID:
 command=echo "$(iwconfig wlan0 | grep ESSID | awk '{print $4}' | tr -d 'ESSID:"')"
 color=#e07221
 interval=5
+{{- end }}
 
 # Memory usage
 #
