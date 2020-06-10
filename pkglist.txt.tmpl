@@ -47,6 +47,7 @@ exa
 {{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 expect
 {{- end }}
+fd
 feh
 {{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 ffmpegthumbnailer
@@ -74,7 +75,9 @@ haveged
 htop
 hwdetect
 hwinfo
+{{- end }}
 i3blocks
+{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 intel-ucode
 ipw2100-fw
 ipw2200-fw
@@ -102,18 +105,22 @@ nbd
 ndisc6
 {{- end }}
 netctl
-{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 network-manager-applet
 networkmanager-openvpn
+{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 nfs-utils
 nitrogen
 ntp
 nvidia-installer-dkms
 openconnect
 opendesktop-fonts
+{{- end }}
 otf-font-awesome
+{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 paprefs
+{{- end }}
 pavucontrol
+{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 pcurses
 picom
 {{- end }}
@@ -124,6 +131,11 @@ poppler-glib
 pptpclient
 pulseaudio-bluetooth
 pulseaudio-jack
+{{- end }}
+{{- if eq .chezmoi.hostname "msi" }}
+qutebrowser
+{{- end }}
+{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 refind-efi
 {{- end }}
 restic

@@ -4,5 +4,10 @@ Julien Dambron's dotfiles, managed with [`chezmoi`](https://github.com/twpayne/c
 
 Install them with:
 
+    ```bash
     chezmoi init https://github.com/jdambron/dotfiles.git
+    ```
 
+    ```bash
+    pacman -S --needed - < pkglist.txt
+    ```
