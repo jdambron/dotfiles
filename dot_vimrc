@@ -9,6 +9,8 @@ call plug#begin()
 Plug 'altercation/vim-colors-solarized'
 Plug 'luochen1990/rainbow'
 Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
