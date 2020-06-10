@@ -19,6 +19,7 @@ filetype plugin indent on
 " General settings
 set encoding=utf-8 " Force UTF-8 encoding
 set noerrorbells " No beeps
+set smartindent
 set number " Show line numbers
 set showcmd " Show me what I'm typing
 set showmode " Show current mode
@@ -30,7 +31,6 @@ set autoread " Automatically reread changed files without asking me anything
 set laststatus=2 "Always show status line
 set fileformats=unix,dos,mac " Prefer Unix over Windows over OS 9 formats
 set ttyfast
-set autoindent " Autoindentation
 set showmatch " Show matching brackets
 
 " Search settings
