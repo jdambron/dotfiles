@@ -33,6 +33,10 @@ set fileformats=unix,dos,mac " Prefer Unix over Windows over OS 9 formats
 set ttyfast
 set showmatch " Show matching brackets
 
+"a better menu in command mode
+set wildmenu
+set wildmode=longest:full,full
+
 " Search settings
 set incsearch " Shows the match while typing
 set hlsearch " Highlight found searches
@@ -48,6 +52,14 @@ set backspace=indent,eol,start  " more powerful backspacing
 " Now we set some defaults for the editor
 set history=50                  " keep 50 lines of command line history
 set ruler                       " show the cursor position all the time
+
+"netrw
+let g:netrw_banner=0
+let g:netrw_winsize=20
+let g:netrw_liststyle=3
+let g:netrw_localrmdir='rm -r'
+"toggle netrw on the left side of the editor
+nnoremap <leader>n :Lexplore<CR>
 
 " Activate rainbow plugin
 let g:rainbow_active = 1
