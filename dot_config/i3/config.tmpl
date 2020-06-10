@@ -132,15 +132,6 @@ exec --no-startup-id /usr/bin/dunst
 exec --no-startup-id "syncthing -no-browser"
 exec --no-startup-id nm-applet
 
-{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
-# set floating for apps needing it
-for_window [class="Pavucontrol" instance="pavucontrol"] floating enable
-# welcome and others
-for_window [class="Yad" instance="yad"] floating enable
-for_window [class="Galculator" instance="galculator"] floating enable
-for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
-{{- end }}
-
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
@@ -266,6 +257,7 @@ for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
 for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enable
 for_window [class="Yad" instance="yad"] floating enable
 for_window [class="Pamac-manager"] floating enable
+for_window [class="Galculator" instance="galculator"] floating enable
 
 # Multimedia Keys
 
