@@ -29,9 +29,7 @@ calibre
 capitaine-cursors
 {{- end }}
 chezmoi
-{{- if eq .chezmoi.hostname "msi" }}
 chromium
-{{- end }}
 colordiff
 {{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 dconf-editor
@@ -136,7 +134,7 @@ pulseaudio-jack
 qutebrowser
 {{- end }}
 {{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
-refind-efi
+refind
 {{- end }}
 restic
 ripgrep
@@ -170,6 +168,7 @@ veracrypt
 vi
 vifm
 {{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
+vlc
 wget
 wifi-radar
 wvdial
