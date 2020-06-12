@@ -1,13 +1,12 @@
 if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+				\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 call plug#begin()
 
 Plug 'altercation/vim-colors-solarized'
-Plug 'luochen1990/rainbow'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
@@ -15,46 +14,64 @@ Plug 'jremmen/vim-ripgrep'
 
 call plug#end()
 
-
-" Plugins settings
-filetype plugin indent on
+" Neovim defaults
+if !has('nvim')
+	set nocompatible " Use Vim defaults instead of 100% vi compatibility
+	if has('autocmd')
+		filetype plugin indent on " Activate filetype detection and indent
+	endif
+	if has('syntax') && !exists('g:syntax_on')
+		syntax enable " Enable syntax highlighting
+	endif
+	set autoindent
+	set autoread " Automatically reread changed files without asking me anything
+	set backspace=indent,eol,start " Modern backspace behavior
+	set belloff=all " Disable the bell
+	set complete-=i " Don't scan current on included files for completion
+	set cscopeverbose " Verbose cscope output
+	set display+=lastline " Display more message text
+	set encoding=utf-8 " Force UTF-8 encoding
+	set formatoptions=tcqj " More intuitive autoformatting
+	set history=10000 " Longest possible command history
+	set hlsearch " Highlight found searches
+	set incsearch " Shows the match while typing
+	set langnoremap " Helps avoid mappings breaking
+	set laststatus=2 "Always show status line
+	set listchars=tab:>\ ,trail:-,nbsp:+ " Chars for :list
+	set nrformats=bin,hex " <c-a> and <c-x> support
+	set ruler " Show the cursor position all the time
+	set sessionoptions-=options " Do not carry options across sessions
+	set shortmess=filnxtToOF " Less verbose file info
+	set showcmd " Show me what I'm typing
+	set sidescroll=1 " Smoother sideways scrolling
+	set smarttab " Tab setting aware <Tab> key
+	set tabpagemax=50 " Maximum number of tabs open by -p flag
+	set tags=./tags;,tags " filenames to look for the tag command
+	set ttimeoutlen=50 " ms to wait for next key in a sequence
+	set ttyfast " Indicates that our connection is fast
+	set viminfo+=! " Save global variables across sessions
+	set wildmenu " Enhanced command line completion
+endif
 
 " General settings
-set encoding=utf-8 " Force UTF-8 encoding
-set noerrorbells " No beeps
-set smartindent
 set number " Show line numbers
-set showcmd " Show me what I'm typing
-set showmode " Show current mode
+set relativenumber " Show relative numbers
 set noswapfile " Don't use swapfile
 set nobackup " Don't create backup files
-set nowritebackup
+set nowritebackup " Don't write backup
 set autowrite " Automatically save before :next, :make etc.
-set autoread " Automatically reread changed files without asking me anything
-set laststatus=2 "Always show status line
-set fileformats=unix,dos,mac " Prefer Unix over Windows over OS 9 formats
-set ttyfast
 set showmatch " Show matching brackets
 
 "a better menu in command mode
-set wildmenu
 set wildmode=longest:full,full
 
 " Search settings
-set incsearch " Shows the match while typing
-set hlsearch " Highlight found searches
 set ignorecase " Search case insensitive...
 set smartcase " ... but not when search pattern contains upper case characters
 
-syntax on " Enable syntax highlighting
 colorscheme solarized " Set default colorscheme
 
-set nocompatible                " Use Vim defaults instead of 100% vi compatibility
-set backspace=indent,eol,start  " more powerful backspacing
-
 " Now we set some defaults for the editor
-set history=50                  " keep 50 lines of command line history
-set ruler                       " show the cursor position all the time
 
 "netrw
 let g:netrw_banner=0
@@ -65,18 +82,15 @@ let g:netrw_browse_split = 2
 "toggle netrw on the left side of the editor
 nnoremap <leader>n :Lexplore<CR>
 
-" Activate rainbow plugin
-let g:rainbow_active = 1
-
 " Suffixes that get lower priority when doing tab completion for filenames.
 " These are files we are not likely to want to edit or read.
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc,.png,.jpg
 
 if has('gui_running')
-  " Make shift-insert work like in Xterm
-  map <S-Insert> <MiddleMouse>
-  map! <S-Insert> <MiddleMouse>
-  set background=light
+	" Make shift-insert work like in Xterm
+	map <S-Insert> <MiddleMouse>
+	map! <S-Insert> <MiddleMouse>
+	set background=light
 else
-  set background=dark
+	set background=dark
 endif
