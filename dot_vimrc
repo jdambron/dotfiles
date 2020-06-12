@@ -62,16 +62,17 @@ set nowritebackup " Don't write backup
 set autowrite " Automatically save before :next, :make etc.
 set showmatch " Show matching brackets
 
-"a better menu in command mode
+" A better menu in command mode
 set wildmode=longest:full,full
+
+" Use the OS clipboard
+set clipboard^=unnamed,unnamedplus
 
 " Search settings
 set ignorecase " Search case insensitive...
 set smartcase " ... but not when search pattern contains upper case characters
 
 colorscheme solarized " Set default colorscheme
-
-" Now we set some defaults for the editor
 
 "netrw
 let g:netrw_banner=0
