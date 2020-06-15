@@ -6,7 +6,7 @@ endif
 
 call plug#begin()
 
-Plug 'altercation/vim-colors-solarized'
+Plug 'gruvbox-community/gruvbox'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
@@ -72,7 +72,7 @@ set clipboard^=unnamed,unnamedplus
 set ignorecase " Search case insensitive...
 set smartcase " ... but not when search pattern contains upper case characters
 
-colorscheme solarized " Set default colorscheme
+colorscheme gruvbox " Set default colorscheme
 
 "netrw
 let g:netrw_banner=0
