@@ -61,12 +61,17 @@ set nobackup " Don't create backup files
 set nowritebackup " Don't write backup
 set autowrite " Automatically save before :next, :make etc.
 set showmatch " Show matching brackets
+set scrolloff=8 " Keep lines above and below cursor
+set updatetime=750 " Improve UX with more reactive updates
 
 " A better menu in command mode
 set wildmode=longest:full,full
 
 " Use the OS clipboard
 set clipboard^=unnamed,unnamedplus
+
+" Use term color
+set termguicolors
 
 " Search settings
 set ignorecase " Search case insensitive...
