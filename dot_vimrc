@@ -70,9 +70,6 @@ set wildmode=longest:full,full
 " Use the OS clipboard
 set clipboard^=unnamed,unnamedplus
 
-" Use term color
-set termguicolors
-
 " Search settings
 set ignorecase " Search case insensitive...
 set smartcase " ... but not when search pattern contains upper case characters
