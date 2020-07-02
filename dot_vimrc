@@ -63,6 +63,7 @@ set autowrite " Automatically save before :next, :make etc.
 set showmatch " Show matching brackets
 set scrolloff=8 " Keep lines above and below cursor
 set updatetime=750 " Improve UX with more reactive updates
+set nowrap " Display long lines as one line
 
 " A better menu in command mode
 set wildmode=longest:full,full
