@@ -75,6 +75,7 @@ set clipboard^=unnamed,unnamedplus
 " Search settings
 set ignorecase " Search case insensitive...
 set smartcase " ... but not when search pattern contains upper case characters
+nnoremap <esc><esc> :noh<return><esc>
 
 colorscheme gruvbox " Set default colorscheme
 
