@@ -12,6 +12,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-surround'
+Plug 'justinmk/vim-dirvish'
 
 call plug#end()
 
