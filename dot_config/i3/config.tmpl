@@ -118,7 +118,6 @@ exec --no-startup-id "devmon --no-gui"
 exec --no-startup-id "~/map_keyboard.sh"
 {{- else }}
 exec --no-startup-id picom -cC
-exec --no-startup-id nitrogen --restore
 #backup packages lists:
 exec pacman -Qqen > packages-repository.txt && pacman -Qqem > packages-AUR.txt
 #set powersavings for display:
