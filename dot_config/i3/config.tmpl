@@ -190,39 +190,34 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
-set $bg-color            #2f343f
-set $inactive-bg-color   #2f343f
-set $text-color          #f3f4f5
-set $inactive-text-color #676e7d
-set $urgent-bg-color     #e53935
-set $indicator-color     #a0a0a0
+# set primary gruvbox colorscheme colors
+set $bg #282828
+set $red #cc241d
+set $green #98971a
+set $yellow #d79921
+set $blue #458588
+set $purple #b16286
+set $aqua #689d68
+set $gray #a89984
+set $darkgray #1d2021
 
-# set window colors
-#                       border             background         text                 indicator
-client.focused          $bg-color          $bg-color          $text-color          $indicator-color
-client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color $indicator-color
-client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color $indicator-color
-client.urgent           $urgent-bg-color   $urgent-bg-color   $text-color          $indicator-color
+#start of window title bars & borders section
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-#bar {
-#	status_command i3status
-#	font pango:monospace 9
-#        
-#	colors {
-#		background $bg-color
-#	    	separator #757575
-#		#                  border             background         text
-#		focused_workspace  $bg-color          $bg-color          $text-color
-#		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-#		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
-#	}
-#}
+# green gruvbox
+# class                 border|backgr|text|indicator|child_border
+#client.focused          $green $green $darkgray $purple $darkgray
+#client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
+#client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
+#client.urgent           $red $red $white $red $red
 
-{{- end }}
+# blue gruvbox
+# class                 border|backgr|text|indicator|child_border
+client.focused          $blue $blue $darkgray $purple $darkgray
+client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
+client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
+client.urgent           $red $red $white $red $red
 
+#end of window title bars & borders section
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -232,14 +227,17 @@ tray_output primary
     position bottom
     tray_padding 0
     colors {
-      separator          #666666
-        background         #222222
-        statusline         #dddddd
-        focused_workspace  #0088CC #0088CC #ffffff
-        active_workspace   #333333 #333333 #ffffff
-        inactive_workspace #333333 #333333 #888888
-        urgent_workspace   #2f343a #900000 #ffffff
-    }
+        # bar background color
+        background $bg
+        # text color used for blocks that do not have a color specified.
+        statusline $yellow
+        # workspaces section            
+        #                    border  backgr. text
+        focused_workspace    $aqua $aqua $darkgray
+        inactive_workspace   $darkgray $darkgray $yellow
+        active_workspace     $darkgray $darkgray $yellow
+        urgent_workspace     $red $red $bg
+     }
 }
 
 {{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
