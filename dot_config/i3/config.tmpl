@@ -116,7 +116,6 @@ set $ws10 "10"
 {{- if eq .chezmoi.hostname "msi" }}
 exec --no-startup-id "~/map_keyboard.sh"
 {{- end }}
-exec --no-startup-id picom -cC
 #set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
 # Desktop notifications
