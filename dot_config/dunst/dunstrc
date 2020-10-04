@@ -167,7 +167,7 @@
 
     # Paths to default icons.
     #icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
-    icon_path= /usr/share/icons/Arc-X-D/status/:/usr/share/icons/Arc-X-D/devices/:/usr/share/icons/Arc-X-D/apps/:/usr/share/icons/Arc-X-D/actions/:/usr/share/icons/Arc-X-D/categories/
+    icon_path= /usr/share/icons/gruvbox-dark-icons-gtk/status/:/usr/share/icons/gruvbox-dark-icons-gtk/devices/:/usr/share/icons/gruvbox-dark-icons-gtk/apps/:/usr/share/icons/gruvbox-dark-icons-gtk/actions/:/usr/share/icons/gruvbox-dark-icons-gtk/categories/
     
     ### History ###
 
@@ -280,14 +280,14 @@
     foreground = "#ebdbb2"
     timeout = 5
     # Icon for notifications with low urgency, uncomment to enable
-    icon = /usr/share/icons/Arc-X-D/status/16/dialog-information.png
+    icon = /usr/share/icons/gruvbox-dark-icons-gtk/16x16/actions/dialog-ok.svg
 
 [urgency_normal]
     background = "#282828"
     foreground = "#ebdbb2"
     timeout = 5
     # Icon for notifications with normal urgency, uncomment to enable
-    icon = /usr/share/icons/Arc-X-D/status/16/dialog-question.png
+    icon = /usr/share/icons/gruvbox-dark-icons-gtk/16x16/emblems/emblem-question.svg
 
 [urgency_critical]
     background = "#282828"
@@ -295,7 +295,7 @@
     frame_color = "#d3869b"
     timeout = 120
     # Icon for notifications with critical urgency, uncomment to enable
-    icon = /usr/share/icons/Arc-X-D/status/16/dialog-warning.png
+    icon = /usr/share/icons/gruvbox-dark-icons-gtk/16x16/actions/dialog-warning.svg
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.

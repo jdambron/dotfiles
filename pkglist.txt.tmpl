@@ -1,11 +1,8 @@
-{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}acpi
-{{- end }}
+acpi
 alacritty
 alsa-firmware
 alsa-utils
-{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 archlinux-xdg-menu
-{{- end }}
 aria2
 autoconf
 automake
@@ -23,9 +20,7 @@ broadcom-wl-dkms
 {{- if eq .chezmoi.hostname "msi" }}
 calibre
 {{- end }}
-{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 capitaine-cursors
-{{- end }}
 chezmoi
 chromium
 colordiff
@@ -60,6 +55,8 @@ gnu-netcat
 gparted
 grsync
 grub2-theme-endeavouros
+gruvbox-dark-gtk
+gruvbox-dark-icons-gtk
 gspell
 gst-plugins-ugly
 gtop
