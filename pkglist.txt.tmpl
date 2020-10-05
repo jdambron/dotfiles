@@ -6,14 +6,12 @@ archlinux-xdg-menu
 aria2
 autoconf
 automake
-{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 b43-fwcutter
 base
-{{- end }}
 bat
 bison
-{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 bluez-utils
+{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 boost
 broadcom-wl-dkms
 {{- end }}
@@ -24,21 +22,8 @@ capitaine-cursors
 chezmoi
 chromium
 colordiff
-{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
-dconf-editor
-dmidecode
-downgrade
-doxygen
 dunst
-efitools
-endeavouros-keyring
-endeavouros-mirrorlist
-eos-update-notifier
-{{- end }}
 exa
-{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
-expect
-{{- end }}
 fd
 feh
 {{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
@@ -50,40 +35,42 @@ flex
 {{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 fsarchiver
 gftp
+{{- end }}
 glances
 gnu-netcat
-gparted
-grsync
 grub2-theme-endeavouros
 gruvbox-dark-gtk
 gruvbox-dark-icons-gtk
 gspell
 gst-plugins-ugly
 gtop
-{{- end }}
 gvim
-{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 hardinfo
-haveged
-htop
-hwdetect
-hwinfo
-{{- end }}
-i3blocks
 {{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
+haveged
+{{- end }}
+htop
+{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
+hwdetect
+{{- end }}
+hwinfo
+i3blocks
 intel-ucode
 ipw2100-fw
 ipw2200-fw
 jq
+{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 libgsf
 libopenraw
 libpwquality
+{{- end }}
 libwnck3
 lightdm-gtk-greeter-settings
+{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 logrotate
 lsscsi
-lxappearance-gtk3
 {{- end }}
+lxappearance-gtk3
 man-db
 man-pages
 {{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
@@ -93,7 +80,6 @@ menumaker
 {{- end }}
 mpv
 {{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
-nano
 nbd
 ndisc6
 {{- end }}
@@ -108,13 +94,9 @@ openconnect
 opendesktop-fonts
 {{- end }}
 otf-font-awesome
-{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 paprefs
-{{- end }}
 pavucontrol
-{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 pcurses
-{{- end }}
 pkgconf
 {{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 pkgfile
@@ -132,38 +114,31 @@ refind
 restic
 ripgrep
 rofi
-{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 rp-pppoe
-{{- end }}
 rsync
 {{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 s-tui
+{{- end }}
 screenfetch
+{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 sdparm
 sg3_utils
 {{- end }}
 syncthing
-{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 sysstat
+{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 tcpdump
+{{- end }}
 tlp
 transmission-gtk
-ttf-caladea
-ttf-carlito
-{{- end }}
 ttf-jetbrains-mono
-{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
-ttf-opensans
-ttf-ubuntu-font-family
-upower
-{{- end }}
 veracrypt
-vi
 vifm
 {{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 vlc
 wget
 wifi-radar
+{{- end }}
 wvdial
 xcursor-neutral
 xdg-user-dirs-gtk
@@ -173,10 +148,7 @@ xf86-video-fbdev
 xf86-video-intel
 xf86-video-vesa
 xl2tpd
-{{- end }}
 xorg-server
-{{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 xorg-xinit
 xorg-xinput
 xorg-xkill
-{{- end }}
