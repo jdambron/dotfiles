@@ -167,7 +167,7 @@
 
     # Paths to default icons.
     #icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
-    icon_path= /usr/share/icons/gruvbox-dark-icons-gtk/status/:/usr/share/icons/gruvbox-dark-icons-gtk/devices/:/usr/share/icons/gruvbox-dark-icons-gtk/apps/:/usr/share/icons/gruvbox-dark-icons-gtk/actions/:/usr/share/icons/gruvbox-dark-icons-gtk/categories/
+    icon_path= /usr/share/icons/gruvbox-dark-icons-gtk/status/:/usr/share/icons/gruvbox-dark-icons-gtk/devices/:/usr/share/icons/gruvbox-dark-icons-gtk/apps/:/usr/share/icons/gruvbox-dark-icons-gtk/actions/:/usr/share/icons/gruvbox-dark-icons-gtk/categories/:/usr/share/pixmaps/
     
     ### History ###
 
