@@ -74,6 +74,11 @@ set wildmode=longest:full,full
 " Use the OS clipboard
 set clipboard^=unnamed,unnamedplus
 
+" Tab config
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+
 " Search settings
 set ignorecase " Search case insensitive...
 set smartcase " ... but not when search pattern contains upper case characters
