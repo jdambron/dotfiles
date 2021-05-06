@@ -116,3 +116,6 @@ if has('gui_running')
 else
 	set background=dark
 endif
+
+" Use templates
+autocmd BufNewFile *src/site/blog/*.md 0r ~/.vim/skeletons/blog-post.md
