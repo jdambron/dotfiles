@@ -44,7 +44,7 @@ matches:
 
   # Dates
   - trigger: ":date"
-    replace: "{{mydate}}"
+    replace: {{"\"{{mydate}}\""}}
     vars:
       - name: mydate
         type: date
@@ -52,7 +52,7 @@ matches:
           format: "%d/%m/%Y"
 
   - trigger: ":sdate"
-    replace: "{{mydate}}"
+    replace: {{"\"{{mydate}}\""}}
     vars:
       - name: mydate
         type: date
