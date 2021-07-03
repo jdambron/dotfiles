@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Make vim the default editor
-export VISUAL=vim;
+# Make nvim the default editor
+export VISUAL=nvim;
 export EDITOR="$VISUAL";
 # Improve bash history
 export HISTCONTROL=erasedups:ignorespace;

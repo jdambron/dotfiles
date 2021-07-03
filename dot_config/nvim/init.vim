@@ -1,5 +1,5 @@
-if empty(glob('~/.vim/autoload/plug.vim'))
-	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+if empty(glob('~/.config/nvim/autoload/plug.vim'))
+	silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
 				\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
@@ -16,45 +16,6 @@ Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 
 call plug#end()
-
-" Neovim defaults
-if !has('nvim')
-	set nocompatible " Use Vim defaults instead of 100% vi compatibility
-	if has('autocmd')
-		filetype plugin indent on " Activate filetype detection and indent
-	endif
-	if has('syntax') && !exists('g:syntax_on')
-		syntax enable " Enable syntax highlighting
-	endif
-	set autoindent
-	set autoread " Automatically reread changed files without asking me anything
-	set backspace=indent,eol,start " Modern backspace behavior
-	set belloff=all " Disable the bell
-	set complete-=i " Don't scan current on included files for completion
-	set cscopeverbose " Verbose cscope output
-	set display+=lastline " Display more message text
-	set encoding=utf-8 " Force UTF-8 encoding
-	set formatoptions=tcqj " More intuitive autoformatting
-	set history=10000 " Longest possible command history
-	set hlsearch " Highlight found searches
-	set incsearch " Shows the match while typing
-	set langnoremap " Helps avoid mappings breaking
-	set laststatus=2 "Always show status line
-	set listchars=tab:>\ ,trail:-,nbsp:+ " Chars for :list
-	set nrformats=bin,hex " <c-a> and <c-x> support
-	set ruler " Show the cursor position all the time
-	set sessionoptions-=options " Do not carry options across sessions
-	set shortmess=filnxtToOF " Less verbose file info
-	set showcmd " Show me what I'm typing
-	set sidescroll=1 " Smoother sideways scrolling
-	set smarttab " Tab setting aware <Tab> key
-	set tabpagemax=50 " Maximum number of tabs open by -p flag
-	set tags=./tags;,tags " filenames to look for the tag command
-	set ttimeoutlen=50 " ms to wait for next key in a sequence
-	set ttyfast " Indicates that our connection is fast
-	set viminfo+=! " Save global variables across sessions
-	set wildmenu " Enhanced command line completion
-endif
 
 " General settings
 set number " Show line numbers
@@ -118,4 +79,4 @@ else
 endif
 
 " Use templates
-autocmd BufNewFile *src/site/blog/*.md 0r ~/.vim/skeletons/blog-post.md
+autocmd BufNewFile *src/site/blog/*.md 0r ~/.config/nvim/skeletons/blog-post.md
