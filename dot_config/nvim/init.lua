@@ -9,9 +9,12 @@ require 'paq' {
     'tpope/vim-commentary';
     'tpope/vim-fugitive';
     'tpope/vim-surround';
-    'vim-airline/vim-airline';
+    'hoob3rt/lualine.nvim';
+    'kyazdani42/nvim-web-devicons';
 }
 -- options
 require 'settings' 
 -- mappings
 require 'mappings'
+-- plugins
+require 'plugins'
