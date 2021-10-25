@@ -9,7 +9,7 @@ require 'paq' {
     'tpope/vim-commentary';
     'tpope/vim-fugitive';
     'tpope/vim-surround';
-    'hoob3rt/lualine.nvim';
+    'nvim-lualine/lualine.nvim';
     'kyazdani42/nvim-web-devicons';
 }
 -- options
