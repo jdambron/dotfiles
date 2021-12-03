@@ -4,5 +4,5 @@ require 'user.plugins'
 require 'settings' 
 -- mappings
 require 'mappings'
--- plugins
-require 'plugins'
+-- plugins config
+require 'user.plugconfig'
