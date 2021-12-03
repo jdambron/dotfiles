@@ -1,7 +1,7 @@
 -- plugins
 require 'user.plugins'
 -- options
-require 'settings' 
+require 'user.options' 
 -- mappings
 require 'mappings'
 -- plugins config
