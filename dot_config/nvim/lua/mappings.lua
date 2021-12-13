@@ -1,4 +1,9 @@
+local opts = { noremap = true, silent = true }
+
+-- Shorten function name
+local keymap = vim.api.nvim_set_keymap
+
 -- Double esc to remove search highlights
-vim.api.nvim_set_keymap('n', '<esc><esc>', ':noh<return><esc>', {noremap = true, silent = true})
+keymap('n', '<esc><esc>', ':noh<return><esc>', opts)
 -- Replace Y with y$
-vim.api.nvim_set_keymap('n', 'Y', 'y$', {noremap = true, silent = true})
+keymap('n', 'Y', 'y$', opts)
