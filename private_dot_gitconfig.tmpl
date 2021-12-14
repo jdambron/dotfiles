@@ -9,7 +9,8 @@
   cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
 # set "nvim" as tool for merging
 [merge]
-  tool = nvim
+ conflictstyle = diff3
+ tool = nvim
 # automatically launch merge tool without displaying a prompt
 [mergetool]
   prompt = false
@@ -18,6 +19,11 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = nvim
+	pager = delta
 [credential "https://github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true
