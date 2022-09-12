@@ -38,13 +38,15 @@ return packer.startup(function(use)
   use 'jremmen/vim-ripgrep'
   use 'justinmk/vim-dirvish'
   use 'kyazdani42/nvim-web-devicons'
+  use 'lewis6991/gitsigns.nvim'
   use 'nvim-lualine/lualine.nvim'
   use 'sheerun/vim-polyglot'
-  use 'tjdevries/colorbuddy.vim'
-  use 'tjdevries/gruvbuddy.nvim'
   use 'tpope/vim-commentary'
   use 'tpope/vim-fugitive'
+  use 'tpope/vim-sleuth'
   use 'tpope/vim-surround'
+  use 'windwp/nvim-autopairs'
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
