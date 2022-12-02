@@ -6,3 +6,5 @@ require 'user.options'
 require 'user.keymaps'
 -- plugins config
 require 'user.plugconfig'
+-- treesitter
+require 'user.treesitter'
