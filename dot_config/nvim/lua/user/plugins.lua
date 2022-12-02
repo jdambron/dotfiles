@@ -35,6 +35,7 @@ packer.init({
 return packer.startup(function(use)
   -- My plugins here
   use 'wbthomason/packer.nvim' -- Have packer manage itself
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'jremmen/vim-ripgrep'
   use 'justinmk/vim-dirvish'
   use 'kyazdani42/nvim-web-devicons'
@@ -47,6 +48,15 @@ return packer.startup(function(use)
   use 'tpope/vim-surround'
   use 'windwp/nvim-autopairs'
   use { "catppuccin/nvim", as = "catppuccin" }
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    -- or                            , branch = '0.1.x',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate',
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
