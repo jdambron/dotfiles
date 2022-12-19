@@ -35,18 +35,32 @@ packer.init({
 return packer.startup(function(use)
   -- My plugins here
   use 'wbthomason/packer.nvim' -- Have packer manage itself
-  use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'jremmen/vim-ripgrep'
   use 'justinmk/vim-dirvish'
   use 'kyazdani42/nvim-web-devicons'
-  use 'lewis6991/gitsigns.nvim'
+  use {
+    'lewis6991/gitsigns.nvim',
+    config = function()
+      require('gitsigns').setup()
+    end
+  }
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
   use 'nvim-lualine/lualine.nvim'
   use 'sheerun/vim-polyglot'
-  use 'tpope/vim-commentary'
   use 'tpope/vim-fugitive'
   use 'tpope/vim-sleuth'
   use 'tpope/vim-surround'
-  use 'windwp/nvim-autopairs'
+  use {
+    'windwp/nvim-autopairs'
+    config = function()
+      require('nvim-autopairs').setup{}
+    end
+  }
   use { "catppuccin/nvim", as = "catppuccin" }
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
