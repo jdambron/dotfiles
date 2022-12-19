@@ -56,7 +56,7 @@ return packer.startup(function(use)
   use 'tpope/vim-sleuth'
   use 'tpope/vim-surround'
   use {
-    'windwp/nvim-autopairs'
+    'windwp/nvim-autopairs',
     config = function()
       require('nvim-autopairs').setup{}
     end
