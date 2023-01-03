@@ -51,7 +51,6 @@ return packer.startup(function(use)
     end
   }
   use 'nvim-lualine/lualine.nvim'
-  use 'sheerun/vim-polyglot'
   use 'tpope/vim-fugitive'
   use 'tpope/vim-sleuth'
   use 'tpope/vim-surround'
