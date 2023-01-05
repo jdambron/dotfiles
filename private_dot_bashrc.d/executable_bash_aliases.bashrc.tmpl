@@ -2,7 +2,6 @@ if ${use_color} ; then
 	alias grep='grep --colour=auto'
 	alias egrep='egrep --colour=auto'
 	alias fgrep='fgrep --colour=auto'
-	alias diff='colordiff'
 fi
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
@@ -13,6 +12,7 @@ alias l='exa'
 alias ls='exa'
 alias ll='exa -l'
 alias la='exa -la'
+alias hx='helix'
 alias rc='rsync -rauv --progress'
 alias vim='nvim'
 alias formatkindle="nvim +'g/^/m0' +'g/^\(.*\)\ze\n\%(.*\n\)*\1$/d' +'g/^/m0' +'%s/^-/\r-/g'"
