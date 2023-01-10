@@ -14,14 +14,14 @@ vim.keymap.set("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 vim.keymap.set("n", "<F5>", "\"=strftime(\"%FT%T\")<CR>p", opts)
 -- Telescope mappings
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
-vim.keymap.set('n', '<leader>fs', function()
+vim.keymap.set('n', '<leader>f', builtin.find_files, { desc = 'find_files' })
+vim.keymap.set('n', '<leader>g', builtin.live_grep, { desc = 'live_grep' })
+vim.keymap.set('n', '<leader>b', builtin.buffers, { desc = 'buffers' })
+vim.keymap.set('n', '<leader>h', builtin.help_tags, { desc = 'help_tags' })
+vim.keymap.set('n', '<leader>s', function()
   builtin.grep_string({ search  = vim.fn.input("Grep > ") })
-end)
-vim.keymap.set('n', '<C-p>', builtin.git_files, {})
+end, { desc = 'grep string' })
+vim.keymap.set('n', '<leader>p', builtin.git_files, { desc = 'git_files' })
 
 -- Visual --
 -- Stay in indent mode
