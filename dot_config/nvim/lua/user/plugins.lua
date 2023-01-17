@@ -18,15 +18,11 @@ require('lazy').setup({
   'kyazdani42/nvim-web-devicons',
   {
     'lewis6991/gitsigns.nvim',
-    config = function()
-      require('gitsigns').setup()
-    end
+    config = true,
   },
   {
     'numToStr/Comment.nvim',
-    config = function()
-        require('Comment').setup()
-    end
+    config = true,
   },
   'nvim-lualine/lualine.nvim',
   'tpope/vim-fugitive',
@@ -34,9 +30,7 @@ require('lazy').setup({
   'tpope/vim-surround',
   {
     'windwp/nvim-autopairs',
-    config = function()
-      require('nvim-autopairs').setup{}
-    end
+    config = true,
   },
   { 'catppuccin/nvim', name = 'catppuccin' },
   {
