@@ -40,19 +40,19 @@ command=~/.config/i3/scripts/iface
 LABEL=ip:
 #IFACE=wlan0
 #ADDRESS_FAMILY=inet6?
-color=#b8bb26
+color=#a6d189
 interval=10
 
 [bandwidth]
 command=~/.config/i3/scripts/bandwidth2
-color=#d65d0e
+color=#ef9f76
 interval=persist
 
 {{- if eq .chezmoi.hostname "zenbook-endeavouros" }}
 [ssid]
 label=SSID:
 command=echo "$(iwconfig wlan0 | grep ESSID | awk '{print $4}' | tr -d 'ESSID:"')"
-color=#d65d0e
+color=#ef9f76
 interval=5
 {{- end }}
 
@@ -62,7 +62,7 @@ interval=5
 [memory]
 label=
 command=~/.config/i3/scripts/memory
-color=#458588
+color=#81c8be
 interval=30
 
 # Disk usage
@@ -74,42 +74,42 @@ interval=30
 label=
 instance=/home/julien
 command=~/.config/i3/scripts/disk
-color=#458588
+color=#81c8be
 interval=30
 
 [CPU-temperature]
 label=CPU
 command=~/.config/i3/scripts/temperature
-color=#458588
+color=#81c8be
 interval=10
 
 [cpu_usage]
 label=
 interval=10
 command=~/.config/i3/scripts/cpu_usage
-color=#458588
+color=#81c8be
 #min_width=CPU: 100.00%
 
 # Volume indicator
 [volume-pulseaudio]
 label=Vol:
 command=~/.config/i3/scripts/volume
-color=#689d6a
+color=#a6d189
 instance=Master
 interval=1
 
 [pavucontrol]
 full_text=
-color=#689d6a
+color=#a6d189
 command=pavucontrol
 
 [time]
 label=
 command=date '+%a %d %b %Y %H:%M:%S'
-color=#fabd2f
+color=#e5c890
 interval=1
 
 [shutdown_menu]
 full_text= 
 command=~/.config/i3/scripts/shutdown_menu -p rofi -c;
-color=#458588
+color=#81c8be	
