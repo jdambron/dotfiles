@@ -15,7 +15,9 @@ automake
 b43-fwcutter
 base
 bash-completion
+bash-language-server
 bat
+bat-extras
 bind
 binutils
 bison
@@ -112,12 +114,14 @@ linux-atm
 linux-firmware
 linux-headers
 logrotate
+logseq-desktop-bin
 lvm2
 lxappearance-gtk3
 m4
 make
 man-db
 man-pages
+marksman
 mdadm
 mkinitcpio
 mkinitcpio-busybox
@@ -156,6 +160,7 @@ polkit-gnome
 poppler-glib
 powerline-fonts
 pptpclient
+prettier
 protobuf
 pulseaudio
 r8168
@@ -167,8 +172,10 @@ ripgrep
 rofi
 rp-pppoe
 rsync
+rust-analyzer
 s-nail
 s-tui
+shfmt
 signal-desktop
 simplescreenrecorder
 smartmontools
@@ -187,7 +194,7 @@ ttf-croscore
 ttf-dejavu
 ttf-fira-code
 ttf-liberation
-ttf-nerd-fonts-symbols-1000-em
+ttf-nerd-fonts-symbols
 tumbler
 unzip
 upower
@@ -204,7 +211,6 @@ wireless-regdb
 wireless_tools
 wvdial
 xcompmgr
-xcursor-neutral
 xdg-user-dirs
 xdg-user-dirs-gtk
 xdg-utils
@@ -220,7 +226,8 @@ xorg-xkill
 xorg-xrandr
 yarn
 youtube-dl
-yubioath-desktop
+yubico-authenticator-bin
+yubikey-manager-qt
 zathura
 zathura-pdf-mupdf
 zoxide
