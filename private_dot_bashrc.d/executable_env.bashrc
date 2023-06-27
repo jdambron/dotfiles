@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Make alacritty the default terminal
+export TERMINAL=alacritty
+
 # Make helix the default editor
 export VISUAL=helix;
 export EDITOR="$VISUAL";
