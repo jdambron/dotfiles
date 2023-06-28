@@ -6,7 +6,7 @@ alsa-plugins
 alsa-utils
 anki
 arandr
-arc-gtk-theme
+arc-gtk-theme-eos
 arc-icon-theme
 archlinux-xdg-menu
 aria2
@@ -30,6 +30,7 @@ colordiff
 croc
 cups
 cups-pdf
+dex
 dhclient
 dialog
 diffutils
@@ -43,6 +44,7 @@ endeavouros-theming
 eos-hooks
 eos-lightdm-gtk-theme
 eos-log-tool
+eos-qogir-icons
 eos-update-notifier
 espanso-bin
 ethtool
@@ -154,7 +156,6 @@ paprefs
 paru
 patch
 pavucontrol
-pcmanfm
 pkgconf
 polkit-gnome
 poppler-glib
@@ -188,6 +189,9 @@ sysfsutils
 sysstat
 system-config-printer
 texinfo
+thunar
+thunar-archive-plugin
+thunar-volman
 tlp
 ttf-bitstream-vera
 ttf-croscore
