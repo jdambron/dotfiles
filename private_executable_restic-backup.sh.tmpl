@@ -1,4 +1,4 @@
-#!/bin/bash
+{{- if eq .chezmoi.hostname "msi" }}#!/bin/bash
 
 restic -r {{ .resticrepo }} backup ~ \
 	--exclude target \
@@ -21,3 +21,4 @@ restic -r {{ .resticrepo }} backup ~ \
 	--exclude ~/keybase \
 	--exclude ~/workspace \
 	--exclude ~/.thumbnails
+{{- end }}
