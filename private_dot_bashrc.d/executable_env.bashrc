@@ -7,6 +7,8 @@ export TERMINAL=alacritty
 export VISUAL=helix;
 export EDITOR="$VISUAL";
 # Improve bash history
+export HISTSIZE=10000
+export HISTFILESIZE=10000
 export HISTCONTROL=erasedups:ignorespace;
 export HISTIGNORE=" *:ls:cd:cd -:pwd:exit:date:* --help:* -h";
 # "bat" as manpager
