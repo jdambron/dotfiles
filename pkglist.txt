@@ -36,6 +36,7 @@ dialog
 diffutils
 dmenu
 dnsmasq
+duf
 dunst
 efibootmgr
 endeavouros-keyring
