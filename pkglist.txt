@@ -49,6 +49,7 @@ eos-qogir-icons
 eos-update-notifier
 espanso-bin
 ethtool
+evernote-for-linux-bin
 exa
 f2fs-tools
 fakeroot
@@ -69,6 +70,7 @@ gcc
 git-delta
 github-cli
 glances
+gnome-keyring
 gnu-free-fonts
 gnu-netcat
 grub
@@ -101,7 +103,6 @@ iwd
 jfsutils
 jq
 kbfs
-keepassxc
 keybase
 keybase-gui
 keyserver-rank
@@ -143,6 +144,7 @@ network-manager-applet
 networkmanager
 networkmanager-openvpn
 nitrogen
+notesnook-bin
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -209,6 +211,9 @@ veracrypt
 vi
 vlc
 welcome
+wezterm
+wezterm-shell-integration
+wezterm-terminfo
 wget
 which
 whois
@@ -230,7 +235,7 @@ xorg-xinput
 xorg-xkill
 xorg-xrandr
 yarn
-youtube-dl
+yt-dlp
 yubico-authenticator-bin
 yubikey-manager-qt
 zathura
