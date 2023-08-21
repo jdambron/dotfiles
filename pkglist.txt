@@ -144,7 +144,6 @@ network-manager-applet
 networkmanager
 networkmanager-openvpn
 nitrogen
-notesnook-bin
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -211,9 +210,6 @@ veracrypt
 vi
 vlc
 welcome
-wezterm
-wezterm-shell-integration
-wezterm-terminfo
 wget
 which
 whois
