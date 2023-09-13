@@ -195,6 +195,9 @@ bindsym $mod+a focus parent
 # open new empty workspace
 bindsym $mod+Shift+n exec ~/.config/i3/scripts/empty_workspace
 
+# OCR in English
+bindsym $mod+Shift+o exec flameshot gui --raw --accept-on-select | tesseract -l eng stdin stdout | xclip -selection clipboard
+
 # Multimedia Keys
 
 # volume
