@@ -46,11 +46,12 @@ eos-hooks
 eos-lightdm-gtk-theme
 eos-log-tool
 eos-qogir-icons
+eos-rankmirrors
 eos-update-notifier
 espanso-bin
 ethtool
 evernote-for-linux-bin
-exa
+eza
 f2fs-tools
 fakeroot
 fd
@@ -190,6 +191,7 @@ syncthing
 sysfsutils
 sysstat
 system-config-printer
+tesseract
 texinfo
 thunar
 thunar-archive-plugin
