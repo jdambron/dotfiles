@@ -57,6 +57,7 @@ fakeroot
 fd
 feh
 ffmpegthumbnailer
+file-roller
 firefox
 flameshot
 flex
@@ -162,6 +163,7 @@ pavucontrol
 pkgconf
 polkit-gnome
 poppler-glib
+power-profiles-daemon
 powerline-fonts
 pptpclient
 prettier
@@ -196,7 +198,6 @@ texinfo
 thunar
 thunar-archive-plugin
 thunar-volman
-tlp
 ttf-bitstream-vera
 ttf-croscore
 ttf-dejavu
