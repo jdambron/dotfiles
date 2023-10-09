@@ -25,6 +25,8 @@ bluez-utils
 brave-bin
 btrfs-progs
 calibre
+catppuccin-cursors-frappe
+catppuccin-gtk-theme-frappe
 chezmoi
 colordiff
 croc
@@ -43,7 +45,7 @@ endeavouros-keyring
 endeavouros-mirrorlist
 endeavouros-theming
 eos-hooks
-eos-lightdm-gtk-theme
+eos-lightdm-slick-theme
 eos-log-tool
 eos-qogir-icons
 eos-rankmirrors
@@ -114,7 +116,6 @@ libopenraw
 libtool
 libwnck3
 lightdm
-lightdm-gtk-greeter-settings
 linux
 linux-atm
 linux-firmware
@@ -185,7 +186,7 @@ shfmt
 signal-desktop
 simplescreenrecorder
 smartmontools
-solid
+solid5
 splix
 starship
 sudo
