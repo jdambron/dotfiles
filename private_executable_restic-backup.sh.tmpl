@@ -21,5 +21,6 @@ restic -r {{ .resticrepo }} backup ~ \
 	--exclude ~/keybase \
 	--exclude ~/workspace \
 	--exclude ~/.logseq \
-	--exclude ~/.thumbnails
+	--exclude ~/.thumbnails \
+	--exclude .trashed-*.jpg
 {{- end }}
