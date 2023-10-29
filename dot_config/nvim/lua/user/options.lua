@@ -11,7 +11,6 @@ local options = {
   wrap = false, -- Display long lines as one line
   signcolumn = 'yes', -- Display an additional column (useful for linting)
   wildmode = {'longest:full','full'}, -- A better menu in command mode
-  clipboard= {'unnamed','unnamedplus'}, -- Use the OS clipboard
   tabstop = 2, -- Insert 2 spaces for a tab
   softtabstop = 2, -- Insert 2 spaces for soft tab
   expandtab = true, -- Use spaces instead of tabs when indenting
