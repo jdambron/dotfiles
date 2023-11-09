@@ -1,0 +1,32 @@
+{
+    "include": "~/.config/waybar/modules",
+    "layer": "top", // Waybar at top layer
+    "spacing": 3, // Gaps between modules (4px)
+    "margin-left": 8,
+    "margin-right": 8,
+    "ipc": true,
+    // Choose the order of the modules
+    "modules-left": [
+    	"hyprland/workspaces",
+    	"custom/separator#dot-line",
+    	"cpu",
+    	"custom/separator#dot-line", 
+    	"temperature",
+    	"custom/separator#dot-line", 
+    	"memory",
+	],
+	"modules-center": [
+		"idle_inhibitor", 
+		"custom/separator#dot-line",
+		"clock",
+		],
+    "modules-right": [
+    	"hyprland/window", 
+    	"tray",
+    	"custom/separator#dot-line",
+    	"battery",
+    	"custom/separator#dot-line",
+    	"pulseaudio",
+    	],
+}
+
