@@ -1,5 +1,6 @@
 accountsservice
 acpi
+age
 alacritty
 alsa-firmware
 alsa-plugins
@@ -25,9 +26,11 @@ bluez-utils
 brave-bin
 btrfs-progs
 calibre
+cargo-outdated
 catppuccin-cursors-frappe
 catppuccin-gtk-theme-frappe
 chezmoi
+cliphist
 colordiff
 croc
 cups
@@ -50,7 +53,7 @@ eos-log-tool
 eos-qogir-icons
 eos-rankmirrors
 eos-update-notifier
-espanso-bin
+espanso-wayland
 ethtool
 evernote-for-linux-bin
 eza
@@ -69,14 +72,17 @@ foomatic-db-gutenprint-ppds
 foomatic-db-nonfree
 foomatic-db-nonfree-ppds
 foomatic-db-ppds
+foot
 fzf
 gcc
 git-delta
 github-cli
+glab
 glances
 gnome-keyring
 gnu-free-fonts
 gnu-netcat
+grim
 grub
 gsfonts
 gst-libav
@@ -97,6 +103,7 @@ helix
 hplip
 htop
 hwinfo
+hyprland
 i3-wm
 i3blocks
 i3lock
@@ -126,6 +133,7 @@ lvm2
 lxappearance-gtk3
 m4
 make
+mako
 man-db
 man-pages
 marksman
@@ -154,9 +162,11 @@ npm
 nss-mdns
 ntfs-3g
 openconnect
+openslide
 os-prober
 otf-font-awesome
 pacman-contrib
+pamixer
 paprefs
 paru
 patch
@@ -188,6 +198,7 @@ simplescreenrecorder
 smartmontools
 solid5
 splix
+spotify
 starship
 sudo
 syncthing
@@ -213,12 +224,15 @@ usbutils
 veracrypt
 vi
 vlc
+waybar
 welcome
 wget
 which
 whois
 wireless-regdb
 wireless_tools
+wl-clipboard
+wofi
 wvdial
 xcompmgr
 xdg-user-dirs
@@ -233,7 +247,9 @@ xorg-server
 xorg-xinit
 xorg-xinput
 xorg-xkill
+xorg-xlsclients
 xorg-xrandr
+xorg-xwayland
 yarn
 yt-dlp
 yubico-authenticator-bin
