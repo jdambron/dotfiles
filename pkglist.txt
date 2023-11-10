@@ -5,7 +5,7 @@ alacritty
 alsa-firmware
 alsa-plugins
 alsa-utils
-anki
+anki-bin
 arandr
 arc-gtk-theme-eos
 arc-icon-theme
@@ -42,7 +42,6 @@ diffutils
 dmenu
 dnsmasq
 duf
-dunst
 efibootmgr
 endeavouros-keyring
 endeavouros-mirrorlist
@@ -55,16 +54,13 @@ eos-rankmirrors
 eos-update-notifier
 espanso-wayland
 ethtool
-evernote-for-linux-bin
 eza
 f2fs-tools
 fakeroot
 fd
-feh
 ffmpegthumbnailer
 file-roller
 firefox
-flameshot
 flex
 foomatic-db
 foomatic-db-engine
@@ -79,7 +75,6 @@ git-delta
 github-cli
 glab
 glances
-gnome-keyring
 gnu-free-fonts
 gnu-netcat
 grim
@@ -104,10 +99,6 @@ hplip
 htop
 hwinfo
 hyprland
-i3-wm
-i3blocks
-i3lock
-i3status
 inetutils
 intel-ucode
 iwd
@@ -172,7 +163,7 @@ paru
 patch
 pavucontrol
 pkgconf
-polkit-gnome
+polkit-kde-agent
 poppler-glib
 power-profiles-daemon
 powerline-fonts
@@ -186,7 +177,6 @@ reflector-simple
 reiserfsprogs
 restic
 ripgrep
-rofi
 rp-pppoe
 rsync
 rust-analyzer
@@ -195,6 +185,7 @@ s-tui
 shfmt
 signal-desktop
 simplescreenrecorder
+slurp
 smartmontools
 solid5
 splix
@@ -206,6 +197,7 @@ sysfsutils
 sysstat
 system-config-printer
 tesseract
+tesseract-data-fra
 texinfo
 thunar
 thunar-archive-plugin
@@ -235,6 +227,7 @@ wl-clipboard
 wofi
 wvdial
 xcompmgr
+xdg-desktop-portal-hyprland
 xdg-user-dirs
 xdg-user-dirs-gtk
 xdg-utils

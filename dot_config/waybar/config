@@ -9,11 +9,13 @@
     "modules-left": [
     	"hyprland/workspaces",
     	"custom/separator#dot-line",
+		"disk",
     	"cpu",
     	"custom/separator#dot-line", 
     	"temperature",
     	"custom/separator#dot-line", 
     	"memory",
+		"network",
 	],
 	"modules-center": [
 		"idle_inhibitor", 
