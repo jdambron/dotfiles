@@ -39,7 +39,6 @@ dex
 dhclient
 dialog
 diffutils
-dmenu
 dnsmasq
 duf
 efibootmgr
