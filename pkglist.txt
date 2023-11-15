@@ -13,8 +13,10 @@ archlinux-xdg-menu
 aria2
 autoconf
 automake
+awesome-terminal-fonts
 b43-fwcutter
 base
+base-devel
 bash-completion
 bash-language-server
 bat
@@ -31,7 +33,6 @@ catppuccin-cursors-frappe
 catppuccin-gtk-theme-frappe
 chezmoi
 cliphist
-colordiff
 croc
 cups
 cups-pdf
@@ -89,7 +90,6 @@ gvfs
 gvfs-afc
 gvfs-goa
 gvfs-google
-gvfs-gphoto2
 gvfs-mtp
 gvfs-nfs
 gvfs-smb
@@ -109,8 +109,10 @@ keybase-gui
 keyserver-rank
 libdvdcss
 libgsf
+libheif
 libopenraw
 libtool
+libvips
 libwnck3
 lightdm
 linux
@@ -214,7 +216,6 @@ usb_modeswitch
 usbutils
 veracrypt
 vi
-vlc
 waybar
 welcome
 wget
@@ -242,7 +243,6 @@ xorg-xkill
 xorg-xlsclients
 xorg-xrandr
 xorg-xwayland
-yarn
 yt-dlp
 yubico-authenticator-bin
 yubikey-manager-qt
