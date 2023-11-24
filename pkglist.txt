@@ -47,7 +47,6 @@ endeavouros-keyring
 endeavouros-mirrorlist
 endeavouros-theming
 eos-hooks
-eos-lightdm-slick-theme
 eos-log-tool
 eos-qogir-icons
 eos-rankmirrors
@@ -114,7 +113,6 @@ libopenraw
 libtool
 libvips
 libwnck3
-lightdm
 linux
 linux-atm
 linux-firmware
