@@ -9,7 +9,7 @@
     grey: #737994;
 
     width: 600;
-    font: "Fira Code 14";
+    font: "Monaspace Argon 14";
 }
 
 element-text, element-icon , mode-switcher {
