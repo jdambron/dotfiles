@@ -155,6 +155,7 @@ openconnect
 openslide
 os-prober
 otf-font-awesome
+otf-monaspace
 pacman-contrib
 pamixer
 paprefs
@@ -204,7 +205,6 @@ thunar-volman
 ttf-bitstream-vera
 ttf-croscore
 ttf-dejavu
-ttf-fira-code
 ttf-liberation
 ttf-nerd-fonts-symbols
 tumbler
@@ -216,9 +216,11 @@ veracrypt
 vi
 waybar
 welcome
+wezterm
 wget
 which
 whois
+windscribe
 wireless-regdb
 wireless_tools
 wl-clipboard
