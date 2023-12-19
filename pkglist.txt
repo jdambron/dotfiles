@@ -73,6 +73,7 @@ glab
 glances
 gnu-free-fonts
 gnu-netcat
+grim
 grub
 gsfonts
 gst-libav
@@ -173,6 +174,7 @@ s-tui
 shfmt
 signal-desktop
 simplescreenrecorder
+slurp
 smartmontools
 solid5
 splix

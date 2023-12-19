@@ -211,6 +211,16 @@ bar {
     swaybar_command waybar
 }
 
+#
+# Print screen:
+#
+#PrintScreen to screenshot region
+bindsym Print exec grim -g "$(slurp -d)" - | wl-copy
+#OCR in English
+bindsym Shift+Print exec grim -g "$(slurp -d)" - | tesseract -l eng stdin stdout | wl-copy
+#OCR in French
+bindsym $mod+Shift+Print exec grim -g "$(slurp -d)" - | tesseract -l fra stdin stdout | wl-copy
+
 # target                 title     bg    text   indicator  border
 client.focused           $lavender $base $text  $rosewater $lavender
 client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
