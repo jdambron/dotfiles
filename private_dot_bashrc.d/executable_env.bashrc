@@ -3,8 +3,8 @@
 # Make alacritty the default terminal
 export TERMINAL=alacritty
 
-# Make helix the default editor
-export VISUAL=helix;
+# Make nvim the default editor
+export VISUAL=nvim;
 export EDITOR="$VISUAL";
 # Improve bash history
 export HISTSIZE=10000
