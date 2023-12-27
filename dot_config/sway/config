@@ -13,7 +13,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty
+set $term wezterm
 # Your preferred browser
 set $browser MOZ_ENABLE_WAYLAND=1 firefox
 # Your preferred file explorer
@@ -86,7 +86,7 @@ input type:keyboard xkb_numlock enabled
     bindsym $mod+o exec $browser
 
     # Start your browser
-    bindsym $mod+n exec $files
+    bindsym $mod+t exec $files
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
