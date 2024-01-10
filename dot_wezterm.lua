@@ -24,7 +24,7 @@ config.font_rules = {
 }
 config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
-config.window_background_opacity = 0.8
+config.window_background_opacity = 0.9
 config.harfbuzz_features = { "calt", "dlig", "clig=1", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08" }
 
 -- and finally, return the configuration to wezterm
