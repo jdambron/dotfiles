@@ -1,6 +1,7 @@
 [user]
 	email = "{{ .email }}"
 	name = "{{ .name }}"
+	signingkey = {{ .signingkey }} 
 [diff]
 	tool = vimdiff
 	compactionHeuristic = true
@@ -33,3 +34,5 @@
 [credential "https://gitlab.com"]
 	helper = 
 	helper = !/usr/bin/glab auth git-credential
+[commit]
+        gpgsign = true
