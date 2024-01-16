@@ -1,0 +1,20 @@
+import = ["/home/julien/.config/alacritty/catppuccin-frappe.toml"]
+
+[font.bold]
+family = "Monaspace Argon"
+style = "Bold"
+
+[font.bold_italic]
+family = "Monaspace Radon"
+style = "Bold Italic"
+
+[font.italic]
+family = "Monaspace Radon"
+style = "Italic"
+
+[font.normal]
+family = "Monaspace Argon"
+style = "Regular"
+
+[window]
+opacity = 0.9
