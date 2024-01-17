@@ -12,8 +12,6 @@ end
 
 -- This is where you actually apply your config choices
 
-
-config.default_prog = { '/bin/bash' }
 config.color_scheme = 'Catppuccin Frappe'
 config.font = wezterm.font("Monaspace Argon", { weight = "Regular" })
 config.font_rules = {

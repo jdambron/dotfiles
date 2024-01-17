@@ -58,6 +58,8 @@ fd
 ffmpegthumbnailer
 file-roller
 firefox
+firefox-i18n-fr
+fish
 flex
 foomatic-db
 foomatic-db-engine
@@ -87,6 +89,7 @@ helix
 hplip
 htop
 hwinfo
+imv
 inetutils
 intel-ucode
 iwd
@@ -111,6 +114,7 @@ logrotate
 logseq-desktop-bin
 lvm2
 lxappearance-gtk3
+ly
 m4
 make
 mako
@@ -146,6 +150,7 @@ openslide
 os-prober
 otf-font-awesome
 otf-monaspace
+otf-monaspace-nerd
 pacman-contrib
 pamixer
 paprefs
@@ -213,7 +218,7 @@ wezterm
 wget
 which
 whois
-windscribe
+windscribe-v2-bin
 wireless-regdb
 wireless_tools
 wl-clipboard
