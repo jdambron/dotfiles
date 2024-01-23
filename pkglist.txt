@@ -19,7 +19,6 @@ base-devel
 bash-completion
 bash-language-server
 bat
-bat-extras
 bind
 binutils
 bison
@@ -184,12 +183,9 @@ smartmontools
 solid5
 splix
 spotify
-starship
 sudo
 sway
 swaybg
-swayidle
-swaylock
 syncthing
 sysfsutils
 sysstat
@@ -214,7 +210,6 @@ veracrypt
 vi
 waybar
 welcome
-wezterm
 wget
 which
 whois

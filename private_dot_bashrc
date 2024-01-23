@@ -1,7 +1,0 @@
-for script in ~/.bashrc.d/*; do
-  # skip non-executable snippets
-  [ -x "$script" ] || continue
-
-  # execute $script in the context of the current shell
-  source "$script"
-done
