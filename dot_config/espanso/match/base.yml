@@ -24,6 +24,8 @@ matches:
     replace: après-midi
   - trigger: ":ty"
     replace: Thank you
+  - trigger: ":gcache"
+    replace: "https://webcache.googleusercontent.com/search?q=cache:"
   - trigger: ":date"
     replace: "{{mydate}}"
     vars:

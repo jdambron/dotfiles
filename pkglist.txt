@@ -6,8 +6,6 @@ alsa-firmware
 alsa-plugins
 alsa-utils
 anki-bin
-arc-gtk-theme-eos
-arc-icon-theme
 archlinux-xdg-menu
 aria2
 autoconf
@@ -177,7 +175,6 @@ s-nail
 s-tui
 shfmt
 signal-desktop
-simplescreenrecorder
 slurp
 smartmontools
 solid5
