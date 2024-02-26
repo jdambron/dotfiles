@@ -8,6 +8,7 @@ alsa-utils
 anki-bin
 archlinux-xdg-menu
 aria2
+atuin
 autoconf
 automake
 awesome-terminal-fonts
