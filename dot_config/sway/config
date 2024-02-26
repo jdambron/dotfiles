@@ -18,10 +18,13 @@ set $term alacritty
 set $browser MOZ_ENABLE_WAYLAND=1 firefox
 # Your preferred file explorer
 set $files thunar
+# Set power menu
+set $powermenu sh ~/.config/wofi/wofi-powermenu.sh
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu wofi -c ~/.config/wofi/config -I | xargs swaymsg exec --
+set $menu wofi -c ~/.config/wofi/config -I -S drun -p Apps | xargs swaymsg exec --
+set $run wofi -c ~/.config/wofi/config -I -S run | xargs swaymsg exec --
 
 ### Output configuration
 #
@@ -82,6 +85,9 @@ input type:keyboard xkb_numlock enabled
     # Start your launcher
     bindsym $mod+d exec $menu
 
+    # Start your launcher in run mode
+    bindsym $mod+p exec $run
+
     # Start your browser
     bindsym $mod+o exec $browser
 
@@ -97,6 +103,9 @@ input type:keyboard xkb_numlock enabled
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+
+    # Launch power menu
+    bindsym $mod+Shift+x exec $powermenu
 #
 # Moving around:
 #
