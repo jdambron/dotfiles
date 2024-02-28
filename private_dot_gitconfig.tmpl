@@ -3,18 +3,12 @@
 	name = "{{ .name }}"
 	signingkey = {{ .signingkey }} 
 [diff]
-	tool = vimdiff
+	tool = nvimdiff
 	compactionHeuristic = true
-# define command which will be used when "nvim" is set as a merge tool
-[mergetool "nvim"]
-  cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
-# set "nvim" as tool for merging
 [merge]
- conflictstyle = diff3
- tool = nvim
-# automatically launch merge tool without displaying a prompt
+	tool = nvimdiff2
 [mergetool]
-  prompt = false
+	prompt = false
 [color]
 	ui = true
 [core]
@@ -28,11 +22,11 @@
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
 [interactive]
-    diffFilter = delta --color-only
+	diffFilter = delta --color-only
 [delta]
-    navigate = true
+	navigate = true
 [credential "https://gitlab.com"]
 	helper = 
 	helper = !/usr/bin/glab auth git-credential
 [commit]
-        gpgsign = true
+	gpgsign = true

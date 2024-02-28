@@ -26,8 +26,6 @@ brave-bin
 btrfs-progs
 calibre
 cargo-outdated
-catppuccin-cursors-frappe
-catppuccin-gtk-theme-frappe
 chezmoi
 croc
 cups
@@ -111,8 +109,6 @@ linux-headers
 logrotate
 logseq-desktop-bin
 lvm2
-lxappearance-gtk3
-ly
 m4
 make
 mako
@@ -194,6 +190,7 @@ texinfo
 thunar
 thunar-archive-plugin
 thunar-volman
+tldr
 ttf-bitstream-vera
 ttf-croscore
 ttf-dejavu
