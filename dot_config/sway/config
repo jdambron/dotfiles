@@ -29,7 +29,7 @@ set $run wofi -c ~/.config/wofi/config -I -S run | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/endeavouros/backgrounds/endeavouros-wallpaper.png fill
+output * bg ~/.config/arch-wallpaper.png fill
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
 # Example configuration:
@@ -237,6 +237,11 @@ bindsym Shift+Print exec grim -g "$(slurp -d)" - | tesseract -l eng stdin stdout
 #OCR in French
 bindsym $mod+Shift+Print exec grim -g "$(slurp -d)" - | tesseract -l fra stdin stdout | wl-copy
 
+#
+# Clipboard manager
+#
+bindsym $mod+Shift+v exec cliphist list | wofi --dmenu | cliphist decode | wl-copy 
+
 # target                 title     bg    text   indicator  border
 client.focused           $lavender $base $text  $rosewater $lavender
 client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
@@ -272,6 +277,9 @@ exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
      
+# Clipboard manager
+exec wl-paste --watch cliphist store
+
 # Welcome App
 exec dex -a -s /etc/xdg/autostart/:~/.config/autostart/  
 

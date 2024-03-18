@@ -1,4 +1,3 @@
-accountsservice
 acpi
 age
 alacritty
@@ -6,7 +5,6 @@ alsa-firmware
 alsa-plugins
 alsa-utils
 anki-bin
-archlinux-xdg-menu
 aria2
 atuin
 autoconf
@@ -27,6 +25,7 @@ btrfs-progs
 calibre
 cargo-outdated
 chezmoi
+cliphist
 croc
 cups
 cups-pdf
@@ -68,7 +67,6 @@ gcc
 git-delta
 github-cli
 glab
-glances
 gnu-free-fonts
 gnu-netcat
 grim
@@ -125,14 +123,12 @@ modemmanager
 mpv
 mtools
 ndisc6
-neofetch
 neovim
 net-tools
 netctl
 network-manager-applet
 networkmanager
 networkmanager-openvpn
-nitrogen
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -213,7 +209,6 @@ wireless-regdb
 wireless_tools
 wl-clipboard
 wofi
-wvdial
 xcompmgr
 xdg-user-dirs
 xdg-utils
