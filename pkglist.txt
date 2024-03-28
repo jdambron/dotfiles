@@ -50,5 +50,6 @@ waybar
 wireplumber
 wl-clipboard
 wofi
+xdg-utils
 xorg-xwayland
 zoxide
