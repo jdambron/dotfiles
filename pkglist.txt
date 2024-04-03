@@ -16,7 +16,10 @@ firefox-i18n-fr
 fish
 fzf
 git
+<<<<<<< Updated upstream
 git-delta
+=======
+>>>>>>> Stashed changes
 github-cli
 glab
 grim
@@ -29,7 +32,11 @@ linux-firmware
 mako
 network-manager-applet
 networkmanager
+<<<<<<< Updated upstream
 noto-fonts
+=======
+noto-fonts-emoji
+>>>>>>> Stashed changes
 otf-font-awesome
 otf-monaspace
 otf-monaspace-nerd
@@ -50,6 +57,9 @@ waybar
 wireplumber
 wl-clipboard
 wofi
+<<<<<<< Updated upstream
 xdg-utils
+=======
+>>>>>>> Stashed changes
 xorg-xwayland
 zoxide

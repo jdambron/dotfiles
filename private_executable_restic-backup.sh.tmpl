@@ -18,6 +18,7 @@ restic -r {{ .resticrepo }} backup ~ \
 	--exclude ~/.cargo \
 	--exclude ~/.rustup \
 	--exclude ~/.vim \
+	--exclude ~/.bun \
 	--exclude ~/keybase \
 	--exclude ~/workspace \
 	--exclude ~/.logseq \
