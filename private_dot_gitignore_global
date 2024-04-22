@@ -16,3 +16,4 @@ _site/
 JULIEN_NOTES.txt
 .lvimrc
 .tern-project
+.stfolder/
