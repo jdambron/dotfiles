@@ -55,4 +55,5 @@ wl-clipboard
 wofi
 xdg-utils
 xorg-xwayland
+yazi
 zoxide
