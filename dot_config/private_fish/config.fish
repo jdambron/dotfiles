@@ -4,10 +4,6 @@ if status is-interactive
     fzf --fish | source
     zoxide init fish | source
     atuin init fish | source
-    if set -q ZELLIJ
-    else
-        zellij
-    end
 end
 
 # bun
