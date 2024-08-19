@@ -1,11 +1,11 @@
 import = ["/home/julien/.config/alacritty/catppuccin-frappe.toml"]
 
 [font.bold]
-family = "Monaspace Argon"
+family = "Monaspace Krypton"
 style = "Bold"
 
 [font.bold_italic]
-family = "Monaspace Radon"
+family = "Monaspace Xenon"
 style = "Bold Italic"
 
 [font.italic]
@@ -13,7 +13,7 @@ family = "Monaspace Radon"
 style = "Italic"
 
 [font.normal]
-family = "Monaspace Argon"
+family = "Monaspace Neon"
 style = "Regular"
 
 [window]
