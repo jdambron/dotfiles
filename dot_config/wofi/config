@@ -1,7 +1,7 @@
 ## Wofi Config
 
 ## General
-term=alacritty
+term=wezterm
 
 ## Keys
 key_expand=Tab
