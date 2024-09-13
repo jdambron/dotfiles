@@ -1,5 +1,4 @@
 age
-alacritty
 atuin
 awesome-terminal-fonts
 base
@@ -35,6 +34,8 @@ neovim
 network-manager-applet
 networkmanager
 noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
 otf-font-awesome
 otf-monaspace
 otf-monaspace-nerd
@@ -53,9 +54,9 @@ tesseract
 tesseract-data-eng
 tesseract-data-fra
 ttf-nerd-fonts-symbols
-ueberzugpp
 unzip
 waybar
+wezterm
 wireplumber
 wl-clipboard
 wofi
