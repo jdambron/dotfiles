@@ -15,6 +15,7 @@ fd
 firefox
 firefox-i18n-fr
 fish
+fisher
 fzf
 git
 git-delta
