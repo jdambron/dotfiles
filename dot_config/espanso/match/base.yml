@@ -16,10 +16,10 @@ matches:
     replace: Highlights Kindle
   - trigger: ":cr:"
     replace: compte-rendu
-  - trigger: ":Cr:"
-    replace: Compte-rendu
+    propagate_case: true
   - trigger: ":ajd"
     replace: "aujourd'hui"
+    propagate_case: true
   - trigger: ":apm"
     replace: après-midi
   - trigger: ":ty"
