@@ -26,6 +26,8 @@ matches:
     replace: Thank you
   - trigger: ":gcache"
     replace: "https://webcache.googleusercontent.com/search?q=cache:"
+  - trigger: ":yt"
+    replace: "@YouTube extract the main ideas and takeaways, output with titles, lists and pretty formatting "
   - trigger: ":date"
     replace: "{{mydate}}"
     vars:
