@@ -13,7 +13,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term wezterm
+set $term foot
 # Your preferred browser
 set $browser MOZ_ENABLE_WAYLAND=1 firefox
 # Your preferred file explorer
@@ -253,6 +253,9 @@ client.background        $base
 # Assign workspaces
 assign [app_id="Alacritty"] 1
 for_window [app_id="Alacritty"] focus
+
+assign [app_id="foot"] 1
+for_window [app_id="foot"] focus
 
 assign [app_id="org.wezfurlong.wezterm"] 1
 for_window [app_id="org.wezfurlong.wezterm"] focus

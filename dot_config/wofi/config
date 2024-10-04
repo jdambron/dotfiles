@@ -1,7 +1,7 @@
 ## Wofi Config
 
 ## General
-term=wezterm
+term=foot
 
 ## Keys
 key_expand=Tab
