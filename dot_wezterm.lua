@@ -5,7 +5,7 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config.font = wezterm.font({ -- Normal text
-	family = "Monaspace Neon",
+	family = "MonaspiceNe Nerd Font",
 	harfbuzz_features = { "calt", "liga", "dlig", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08" },
 })
 
@@ -14,7 +14,7 @@ config.font_rules = {
 		intensity = "Normal",
 		italic = true,
 		font = wezterm.font({
-			family = "Monaspace Radon",
+			family = "MonaspiceRn Nerd Font",
 			style = "Italic",
 		}),
 	},
@@ -23,7 +23,7 @@ config.font_rules = {
 		intensity = "Bold",
 		italic = false,
 		font = wezterm.font({
-			family = "Monaspace Krypton",
+			family = "MonaspiceKr Nerd Font",
 			weight = "Bold",
 		}),
 	},
@@ -32,7 +32,7 @@ config.font_rules = {
 		intensity = "Bold",
 		italic = true,
 		font = wezterm.font({
-			family = "Monaspace Xenon",
+			family = "MonaspiceXe Nerd Font",
 			style = "Italic",
 			weight = "Bold",
 		}),

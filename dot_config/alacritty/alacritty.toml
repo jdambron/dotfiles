@@ -1,19 +1,19 @@
 import = ["/home/julien/.config/alacritty/catppuccin-frappe.toml"]
 
 [font.bold]
-family = "Monaspace Krypton"
+family = "MonaspiceKr Nerd Font"
 style = "Bold"
 
 [font.bold_italic]
-family = "Monaspace Xenon"
+family = "MonaspiceXe Nerd Font"
 style = "Bold Italic"
 
 [font.italic]
-family = "Monaspace Radon"
+family = "MonaspiceRn Nerd Font"
 style = "Italic"
 
 [font.normal]
-family = "Monaspace Neon"
+family = "MonaspiceNe Nerd Font"
 style = "Regular"
 
 [window]
