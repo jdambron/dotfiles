@@ -19,12 +19,11 @@ set $browser MOZ_ENABLE_WAYLAND=1 firefox
 # Your preferred file explorer
 set $files thunar
 # Set power menu
-set $powermenu sh ~/.config/wofi/wofi-powermenu.sh
+set $powermenu sh ~/.config/fuzzel/scripts/fuzzel-powermenu.sh
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu wofi -c ~/.config/wofi/config -I -S drun -p Apps | xargs swaymsg exec --
-set $run wofi -c ~/.config/wofi/config -I -S run | xargs swaymsg exec --
+set $menu fuzzel | xargs swaymsg exec --
 
 ### Output configuration
 #
@@ -84,9 +83,6 @@ input type:keyboard xkb_numlock enabled
 
     # Start your launcher
     bindsym $mod+d exec $menu
-
-    # Start your launcher in run mode
-    bindsym $mod+p exec $run
 
     # Start your browser
     bindsym $mod+o exec $browser
@@ -240,7 +236,7 @@ bindsym $mod+Shift+Print exec grim -g "$(slurp -d)" - | tesseract -l fra stdin s
 #
 # Clipboard manager
 #
-bindsym $mod+Shift+v exec cliphist list | wofi --dmenu | cliphist decode | wl-copy 
+bindsym $mod+Shift+v exec cliphist list | fuzzel --dmenu | cliphist decode | wl-copy 
 
 # target                 title     bg    text   indicator  border
 client.focused           $lavender $base $text  $rosewater $lavender

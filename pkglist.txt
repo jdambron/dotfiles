@@ -16,6 +16,8 @@ firefox
 firefox-i18n-fr
 fish
 fisher
+foot
+fuzzel
 fzf
 git
 git-delta
@@ -60,7 +62,6 @@ waybar
 wezterm
 wireplumber
 wl-clipboard
-wofi
 xdg-utils
 xorg-xwayland
 yazi
