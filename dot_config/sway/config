@@ -238,6 +238,8 @@ bindsym $mod+Shift+Print exec grim -g "$(slurp -d)" - | tesseract -l fra stdin s
 #
 bindsym $mod+Shift+v exec cliphist list | fuzzel --dmenu | cliphist decode | wl-copy 
 
+bindsym $mod+n exec fnottctl dismiss
+
 # target                 title     bg    text   indicator  border
 client.focused           $lavender $base $text  $rosewater $lavender
 client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
@@ -272,7 +274,7 @@ assign [app_id=mpv] 4
 for_window [app_id=mpv] focus
 
 # Desktop notifications
-exec mako
+exec fnott
 
 # Network Applet
 exec nm-applet --indicator

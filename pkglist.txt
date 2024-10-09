@@ -31,7 +31,6 @@ libpulse
 lazygit
 linux
 linux-firmware
-mako
 mpv
 neovim
 network-manager-applet
@@ -51,6 +50,7 @@ pipewire-pulse
 ripgrep
 rsync
 slurp
+snott
 sway
 swaybg
 tesseract
