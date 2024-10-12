@@ -28,6 +28,7 @@ grim
 gst-plugin-pipewire
 helix
 intel-ucode
+jq
 libpulse
 lazygit
 linux

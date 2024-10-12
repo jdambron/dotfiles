@@ -13,10 +13,10 @@ AUTO_LOCK=900        # 15 minutes, default for bitwarden apps
 ITEMS=
 
 # Stores which command will be used to emulate keyboard type
-AUTOTYPE_MODE=
+AUTOTYPE_MODE=xdotool
 
 # Stores which command will be used to deal with clipboards
-CLIPBOARD_MODE=
+CLIPBOARD_MODE=wayland
 
 # Specify what happens when pressing Enter on an item.
 # Defaults to copy_password, can be changed to (auto_type all) or (auto_type password)
@@ -35,8 +35,6 @@ DEDUP_MARK="(+)"
 
 ASK_PASSWORD_COMMAND="fuzzel -d -l 0 --password -p \"Master  Password > \" < /etc/fstab"
 SEARCH_COMMAND="fuzzel -d -p \"Name > \""
-
-ICON="/usr/share/icons/hicolor/64x64/apps/bitwarden.png"
 
 # Helper functions
 
@@ -103,7 +101,7 @@ exit_error() {
   local code="$1"
   local message="$2"
 
-  notify-send "Bwmenu error occurred" "$message" -i "$ICON"
+  notify-send "Bwmenu error occurred" "$message"
 
   exit "$code"
 }
@@ -212,37 +210,12 @@ auto_type() {
 
 }
 
-# Set $AUTOTYPE_MODE to a command that will emulate keyboard input
-select_autotype_command() {
-  if [[ -z "$AUTOTYPE_MODE" ]]; then
-    if [ "$XDG_SESSION_TYPE" = "wayland" ] && hash ydotool 2>/dev/null; then
-      AUTOTYPE_MODE=(sudo ydotool)
-    elif [ "$XDG_SESSION_TYPE" != "wayland" ] && hash xdotool 2>/dev/null; then
-      AUTOTYPE_MODE=xdotool
-    fi
-  fi
-}
-
 type_word() {
   "${AUTOTYPE_MODE[@]}" type "$1"
 }
 
 type_tab() {
   "${AUTOTYPE_MODE[@]}" key Tab
-}
-
-# Set $CLIPBOARD_MODE to a command that will put stdin into the clipboard.
-select_copy_command() {
-  if [[ -z "$CLIPBOARD_MODE" ]]; then
-    if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
-      hash wl-copy 2>/dev/null && CLIPBOARD_MODE=wayland
-    elif hash xclip 2>/dev/null; then
-      CLIPBOARD_MODE=xclip
-    elif hash xsel 2>/dev/null; then
-      CLIPBOARD_MODE=xsel
-    fi
-    [ -z "$CLIPBOARD_MODE" ] && exit_error 1 "No clipboard command found. Please install either xclip, xsel, or wl-clipboard."
-  fi
 }
 
 clipboard-set() {
@@ -255,30 +228,6 @@ clipboard-get() {
 
 clipboard-clear() {
   clipboard-${CLIPBOARD_MODE}-clear
-}
-
-clipboard-xclip-set() {
-  xclip -selection clipboard -r
-}
-
-clipboard-xclip-get() {
-  xclip -selection clipboard -o
-}
-
-clipboard-xclip-clear() {
-  echo -n "" | xclip -selection clipboard -r
-}
-
-clipboard-xsel-set() {
-  xsel --clipboard --input
-}
-
-clipboard-xsel-get() {
-  xsel --clipboard
-}
-
-clipboard-xsel-clear() {
-  xsel --clipboard --delete
 }
 
 clipboard-wayland-set() {
@@ -448,12 +397,12 @@ show_copy_notification() {
     extra_options+=("-t" "$((CLEAR * 1000))")
   fi
   # not sure if icon will be present everywhere, /usr/share/icons is default icon location
-  notify-send "$title" "$body" "${extra_options[@]}" -i "$ICON"
+  notify-send "$title" "$body" "${extra_options[@]}"
 }
 
 parse_cli_arguments() {
   # Use GNU getopt to parse command line arguments
-  if ! ARGUMENTS=$(getopt -o c:Cpui: -l icon:,auto-lock:,rofi,fuzzel,ask-password-command:,error-command:,search-command:,clear:,no-clear,show-password,password,user,help,version -- "$@"); then
+  if ! ARGUMENTS=$(getopt -o c:Cpui: -l auto-lock:,ask-password-command:,error-command:,search-command:,clear:,no-clear,show-password,password,user,help -- "$@"); then
     exit_error 1 "Failed to parse command-line arguments"
   fi
   eval set -- "$ARGUMENTS"
@@ -470,9 +419,6 @@ parse_cli_arguments() {
 				Options:
 				  --help
 				      Show this help text and exit.
-
-				  --version
-				      Show version information and exit.
 
 				  --auto-lock <SECONDS>
 				      Automatically lock the Vault <SECONDS> seconds after last unlock.
@@ -502,35 +448,12 @@ parse_cli_arguments() {
 
 				  --search-command <COMMAND>
 				      Search command. By default it is fuzzel
-
-				  --rofi
-				      Use rofi defaults for commands.
-					  Search command: ${SEARCH_COMMAND_COMMAND_ROFI}
-					  Ask password command: ${ASK_PASSWORD_COMMAND_ROFI}
-
-				  --fuzzel
-				      Use fuzzel defaults for commands.
-					  Search command: ${SEARCH_COMMAND_FUZZEL}
-					  Ask password command: ${ASK_PASSWORD_COMMAND_FUZZEL}
-
-				  -i <PATH_TO_ICON>, --icon <PATH_TO_ICON>
-				      Specify path to icon, that will be used for notify-send
-
 			USAGE
-      shift
-      exit 0
-      ;;
-    --version)
-      echo "$NAME $VERSION"
       shift
       exit 0
       ;;
     --auto-lock)
       AUTO_LOCK=$2
-      shift 2
-      ;;
-    -i | --icon)
-      ICON="$2"
       shift 2
       ;;
     -c | --clear)
@@ -551,16 +474,6 @@ parse_cli_arguments() {
       ;;
     --show-password)
       SHOW_PASSWORD=yes
-      shift
-      ;;
-    --rofi)
-      ASK_PASSWORD_COMMAND="$ASK_PASSWORD_COMMAND_ROFI"
-      SEARCH_COMMAND="$SEARCH_COMMAND_ROFI"
-      shift
-      ;;
-    --fuzzel)
-      ASK_PASSWORD_COMMAND="$ASK_PASSWORD_COMMAND_FUZZEL"
-      SEARCH_COMMAND="$SEARCH_COMMAND_FUZZEL"
       shift
       ;;
     --ask-password-command)
