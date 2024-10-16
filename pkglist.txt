@@ -1,4 +1,5 @@
 age
+alacritty
 atuin
 awesome-terminal-fonts
 base
@@ -17,7 +18,6 @@ firefox
 firefox-i18n-fr
 fish
 fisher
-foot
 fuzzel
 fzf
 git
