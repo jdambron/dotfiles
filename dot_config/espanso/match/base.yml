@@ -28,6 +28,8 @@ matches:
     replace: "https://webcache.googleusercontent.com/search?q=cache:"
   - trigger: ":yt"
     replace: "@YouTube extract the main ideas and takeaways, output with titles, lists and pretty formatting "
+  - trigger: ":fryt"
+    replace: "@YouTube extrait les idées principales et éléments à retenir avec des titres, des listes et un bon format de "
   - trigger: ":date"
     replace: "{{mydate}}"
     vars:
