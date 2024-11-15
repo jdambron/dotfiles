@@ -15,7 +15,7 @@ set $right l
 # Your preferred terminal emulator
 set $term alacritty
 # Your preferred browser
-set $browser MOZ_ENABLE_WAYLAND=1 firefox
+set $browser brave
 # Your preferred file explorer
 set $files thunar
 # Set power menu
