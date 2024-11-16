@@ -6,6 +6,7 @@ base
 base-devel
 bat
 bitwarden-cli
+brave-bin
 chezmoi
 cliphist
 dex
@@ -14,10 +15,9 @@ espanso-wayland
 eza
 fastfetch
 fd
-firefox
-firefox-i18n-fr
 fish
 fisher
+fnott
 fuzzel
 fzf
 git
@@ -29,10 +29,12 @@ gst-plugin-pipewire
 helix
 intel-ucode
 jq
-libpulse
 lazygit
+libpulse
 linux
 linux-firmware
+luarocks
+marksman
 mpv
 neovim
 network-manager-applet
@@ -40,8 +42,8 @@ networkmanager
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
+npm
 otf-font-awesome
-otf-monaspace
 otf-monaspace-nerd
 paru
 pavucontrol
@@ -52,7 +54,6 @@ pipewire-pulse
 ripgrep
 rsync
 slurp
-snott
 sway
 swaybg
 tesseract
@@ -61,7 +62,7 @@ tesseract-data-fra
 ttf-nerd-fonts-symbols
 unzip
 waybar
-wezterm
+wget
 wireplumber
 wl-clipboard
 xdg-utils
