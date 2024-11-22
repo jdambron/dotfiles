@@ -20,8 +20,6 @@ set $browser brave
 set $files thunar
 # Set power menu
 set $powermenu bash ~/.config/fuzzel/scripts/fuzzel-powermenu.sh
-# Set bitwarden menu
-set $bwmenu bash ~/.config/fuzzel/scripts/bwmenu.sh
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -104,8 +102,6 @@ input type:keyboard xkb_numlock enabled
 
     # Launch power menu
     bindsym $mod+Shift+x exec $powermenu
-    # Launch bitwarden menu
-    bindsym $mod+Shift+p exec $bwmenu
 #
 # Moving around:
 #

@@ -5,7 +5,6 @@ awesome-terminal-fonts
 base
 base-devel
 bat
-bitwarden-cli
 brave-bin
 chezmoi
 cliphist
