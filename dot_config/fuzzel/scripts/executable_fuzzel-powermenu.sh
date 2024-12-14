@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 SELECTION="$(printf "1 - Suspend\n2 - Log out\n3 - Reboot\n4 - Hard reboot\n5 - Shutdown" | fuzzel --dmenu -l 5 -p "Power Menu: ")"
 
