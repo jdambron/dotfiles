@@ -242,6 +242,9 @@ bindsym $mod+Shift+v exec cliphist list | fuzzel --dmenu | cliphist decode | wl-
 
 bindsym $mod+n exec fnottctl dismiss
 
+# Lookup selected word in dictionary
+bindsym $mod+i exec ~/scripts/define_word.sh
+
 # target                 title     bg    text   indicator  border
 client.focused           $lavender $base $text  $rosewater $lavender
 client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
