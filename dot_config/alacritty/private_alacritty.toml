@@ -3,19 +3,19 @@
 size = 12.0
 
 [font.bold]
-family = "MonaspiceKr Nerd Font"
+family = "JetBrainsMonoNerdFont"
 style = "Bold"
 
 [font.bold_italic]
-family = "MonaspiceXe Nerd Font"
+family = "JetBrainsMonoNerdFont"
 style = "Bold Italic"
 
 [font.italic]
-family = "MonaspiceRn Nerd Font"
+family = "JetBrainsMonoNerdFont"
 style = "Italic"
 
 [font.normal]
-family = "MonaspiceNe Nerd Font"
+family = "JetBrainsMonoNerdFont"
 style = "Regular"
 
 [window]
