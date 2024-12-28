@@ -20,6 +20,7 @@ fnott
 fuzzel
 fzf
 git
+ghostty
 git-delta
 github-cli
 glab
@@ -58,6 +59,7 @@ swaybg
 tesseract
 tesseract-data-eng
 tesseract-data-fra
+ttf-jetbrains-mono-nerd
 ttf-nerd-fonts-symbols
 unzip
 waybar

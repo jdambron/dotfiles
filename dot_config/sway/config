@@ -1,7 +1,7 @@
 # Read `man 5 sway` for a complete reference.
 include catppuccin-frappe
 
-font MonaspiceNe Nerd Font 11
+font JetBrainsMonoNerdFont 11
 
 ### Variables
 #
