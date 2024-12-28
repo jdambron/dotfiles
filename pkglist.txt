@@ -19,8 +19,8 @@ fisher
 fnott
 fuzzel
 fzf
-git
 ghostty
+git
 git-delta
 github-cli
 glab
@@ -44,7 +44,6 @@ noto-fonts-cjk
 noto-fonts-emoji
 npm
 otf-font-awesome
-otf-monaspace-nerd
 paru
 pavucontrol
 pipewire
