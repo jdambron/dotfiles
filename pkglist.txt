@@ -1,5 +1,4 @@
 age
-alacritty
 atuin
 awesome-terminal-fonts
 base
