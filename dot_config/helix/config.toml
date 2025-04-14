@@ -1,7 +1,5 @@
-theme = "catppuccin_frappe"
-
 [editor]
-rulers = [80,120]
+rulers = [80, 120]
 line-number = "relative"
 whitespace.render = "all"
 
