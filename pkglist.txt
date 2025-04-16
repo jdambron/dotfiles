@@ -23,6 +23,7 @@ cargo-outdated
 chaotic-keyring
 chaotic-mirrorlist
 chezmoi
+clipboard-manager-git
 cosmic-app-library
 cosmic-applets
 cosmic-bg
@@ -204,6 +205,8 @@ upower
 usb_modeswitch
 usbutils
 veracrypt
+vulkan-intel
+vulkan-tools
 welcome
 wget
 which
