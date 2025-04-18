@@ -12,8 +12,6 @@ matches:
     replace: dreamlike3d@gmail.com
   - trigger: ":sm:"
     replace: Scrum Master
-  - trigger: ":hk"
-    replace: Highlights Kindle
   - trigger: ":cr:"
     replace: compte-rendu
     propagate_case: true
@@ -24,8 +22,6 @@ matches:
     replace: après-midi
   - trigger: ":ty"
     replace: Thank you
-  - trigger: ":gcache"
-    replace: "https://webcache.googleusercontent.com/search?q=cache:"
   - trigger: ":yt"
     replace: "@YouTube extract the main ideas and takeaways, output with titles, lists and pretty formatting "
   - trigger: ":fryt"
