@@ -63,9 +63,12 @@ abbr paf "paru -Ql"
 abbr pao "paru -Qo"
 
 # Section : git
-abbr gst "git status"
+abbr ga "git add"
 abbr gaa "git add -A"
 abbr gc "git commit"
+abbr gco "git checkout"
 abbr gd "git diff"
 abbr gdc "git diff --cached"
 abbr gp "git push"
+abbr gs "git status"
+abbr gt "git tag"
