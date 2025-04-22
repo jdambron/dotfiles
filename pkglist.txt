@@ -15,6 +15,7 @@ bat
 bind
 binutils
 bison
+bluez
 bluez-utils
 brave-bin
 btrfs-progs
@@ -23,7 +24,6 @@ cargo-outdated
 chaotic-keyring
 chaotic-mirrorlist
 chezmoi
-clipboard-manager-git
 cosmic-app-library
 cosmic-applets
 cosmic-bg
@@ -183,6 +183,7 @@ rsync
 rust-analyzer
 signal-desktop
 spotify
+starship
 sudo
 syncthing
 sysfsutils

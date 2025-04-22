@@ -4,6 +4,7 @@ if status is-interactive
     fzf --fish | source
     zoxide init fish | source
     atuin init fish | source
+    starship init fish | source
 end
 
 # bun
