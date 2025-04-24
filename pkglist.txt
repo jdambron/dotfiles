@@ -106,6 +106,7 @@ intel-ucode
 iwd
 jfsutils
 jq
+jujutsu
 keyserver-rank
 lazygit
 libdvdcss
@@ -228,7 +229,6 @@ xfsprogs
 xl2tpd
 xorg-xlsclients
 xorg-xwayland
-yazi
 yt-dlp
 yubico-authenticator-bin
 zathura
