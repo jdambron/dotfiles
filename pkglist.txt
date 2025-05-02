@@ -46,6 +46,8 @@ glab
 gst-plugin-pipewire
 helix
 intel-ucode
+jq
+jujutsu
 lazygit
 libnotify
 libpulse
@@ -53,6 +55,9 @@ linux
 linux-firmware
 neovim
 networkmanager
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
 paru
 pipewire
 pipewire-alsa
@@ -63,6 +68,7 @@ rage-encryption
 ripgrep
 rsync
 starship
+ttf-jetbrains-mono-nerd
 upower
 wireplumber
 xdg-desktop-portal-cosmic
