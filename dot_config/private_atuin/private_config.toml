@@ -102,7 +102,7 @@ inline_height = 20
 #   "^secret-cmd",
 #   "^innocuous-cmd .*--secret=.+"
 # ]
-history_filter = ["^a2", "^mpv", ".mkv$", ".mp4$"]
+history_filter = ["^a2", "^aria2c", "^mpv", ".mkv$", ".mp4$"]
 
 ## prevent commands run with cwd matching any of these regexes from being written
 ## to history. Note that these regular expressions are unanchored, i.e. if they don't
