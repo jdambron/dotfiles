@@ -72,3 +72,8 @@ abbr gdc "git diff --cached"
 abbr gp "git push"
 abbr gs "git status"
 abbr gt "git tag"
+
+# Section : bun
+abbr bu "bun update"
+abbr bus "bun upgrade --stable"
+abbr bo "bun outdated"
