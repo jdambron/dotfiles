@@ -73,7 +73,14 @@ abbr gp "git push"
 abbr gs "git status"
 abbr gt "git tag"
 
+# Section : git
+abbr jf "jj git fetch"
+abbr jn "jj new"
+abbr jp "jj git push"
+abbr js "jj st"
+
 # Section : bun
 abbr bu "bun update"
 abbr bus "bun upgrade --stable"
 abbr bo "bun outdated"
+abbr bf "bun run format"
