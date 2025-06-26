@@ -350,6 +350,7 @@ binds {
     Mod+B hotkey-overlay-title="Run a Browser: brave" { spawn "brave"; }
     Mod+N hotkey-overlay-title="Run a File Explorer: nautilus" { spawn "nautilus"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock" "-c" "000000"; }
+    Super+Alt+N hotkey-overlay-title="Clear notifications" { spawn "makoctl" "dismiss"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
